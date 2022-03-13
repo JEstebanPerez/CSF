@@ -5,6 +5,7 @@ import static com.pastillasCreator.pill_box.almacenaje.Citero.getCitero;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.ListAdapter;
 import android.widget.ListView;
@@ -53,5 +54,9 @@ public class ActividadCitero extends AppCompatActivity {
             i.putExtra("posicion", Integer.toString(position));
             startActivity(i);
         });
+    }
+
+    public void añadirCita(View view) {
+        startActivity(new Intent(getApplicationContext(), ActividadCreadorCitas.class));
     }
 }

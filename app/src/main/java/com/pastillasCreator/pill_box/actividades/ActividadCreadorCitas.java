@@ -5,22 +5,19 @@ import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.TextView;
-import android.widget.TimePicker;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pill_box.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pastillasCreator.pill_box.creadorElementosCalendario.CreadorCitas;
+import com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick;
 import com.pastillasCreator.pill_box.herramientas.ManipuladorFechas;
 
 import java.util.Calendar;
@@ -44,6 +41,7 @@ public class ActividadCreadorCitas extends AppCompatActivity {
     ManipuladorFechas manipuladorFechas = new ManipuladorFechas();
 
     // Se conecta los campos de texto con el código y el desplegable asigna qué valor tendrá al final cita
+    @androidx.annotation.RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -59,42 +57,8 @@ public class ActividadCreadorCitas extends AppCompatActivity {
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.citas);
 
-        bottomNavigationView.setOnNavigationItemSelectedListener
-            (new BottomNavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()){
-
-                    case R.id.home:
-                        startActivity(new Intent(getApplicationContext(),
-                                ActividadMain.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.pastillero:
-                        startActivity(new Intent(getApplicationContext(),
-                                ActividadPastillero.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.calendario:
-                        startActivity(new Intent(getApplicationContext(),
-                                ActividadCalendario.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case R.id.citas:
-                        startActivity(new Intent(getApplicationContext(),
-                                ActividadCitero.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                    case  R.id.ayuda:
-                        startActivity(new Intent(getApplicationContext(),
-                                Ayuda.class));
-                        overridePendingTransition(0,0);
-                        return true;
-                }
-                return false;
-
-            }
-        });
+        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
+        bottomNavigationView.setOnItemSelectedListener(functionsWhenClick::getApply);
     }
 
     // Comprueba que los datos importantes no estén vacíos y si lo están impide que se guarden
@@ -124,16 +88,13 @@ public class ActividadCreadorCitas extends AppCompatActivity {
         int minuto = c.get(Calendar.MINUTE);
 
         TimePickerDialog tmd = new TimePickerDialog(ActividadCreadorCitas.this,
-            new TimePickerDialog.OnTimeSetListener() {
-            @Override
-            public void onTimeSet(TimePicker timePicker, int hourOfDay, int minute) {
-                String minuto = manipuladorFechas.IntegerAStringFecha(minute);
-                String hora = manipuladorFechas.IntegerAStringFecha(hourOfDay);
-                String horaCompleta = hora + ":" + minuto;
-                textoHoraActividad.setText(horaCompleta);
-                setHora(horaCompleta);
-            }
-        },hora, minuto, false); // Contexto, listener
+                (timePicker, hourOfDay, minute) -> {
+                    String minuto1 = manipuladorFechas.IntegerAStringFecha(minute);
+                    String hora1 = manipuladorFechas.IntegerAStringFecha(hourOfDay);
+                    String horaCompleta = hora1 + ":" + minuto1;
+                    textoHoraActividad.setText(horaCompleta);
+                    setHora(horaCompleta);
+                },hora, minuto, false); // Contexto, listener
         tmd.show(); // Si no ponemos la función show, no se va a mostrar
     }
 
@@ -145,16 +106,13 @@ public class ActividadCreadorCitas extends AppCompatActivity {
         int dia = cal.get(Calendar.DAY_OF_MONTH); //Variable para guardar el día
 
         DatePickerDialog dpd = new DatePickerDialog(ActividadCreadorCitas.this,
-            new DatePickerDialog.OnDateSetListener() {
-            @Override
-            public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-                String day = manipuladorFechas.IntegerAStringFecha(dayOfMonth);
-                String mon = manipuladorFechas.IntegerAStringFecha(month);
-                String fecha = day + "/" + mon + "/" + year;
-                textoFecha.setText(fecha);
-                setFecha(year + "-" + mon + "-" + day);
-                }
-            }, anio, mes, dia);
+                (datePicker, year, month, dayOfMonth) -> {
+                    String day = manipuladorFechas.IntegerAStringFecha(dayOfMonth);
+                    String mon = manipuladorFechas.IntegerAStringFecha(month);
+                    String fecha = day + "/" + mon + "/" + year;
+                    textoFecha.setText(fecha);
+                    setFecha(year + "-" + mon + "-" + day);
+                    }, anio, mes, dia);
 
         dpd.show();
     }

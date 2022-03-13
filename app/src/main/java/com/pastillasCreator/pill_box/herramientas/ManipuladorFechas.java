@@ -23,9 +23,6 @@ public class ManipuladorFechas {
 
     public String IntegerAStringFecha(int intMinutos){
         String strMinuto = String.valueOf(intMinutos);
-        if (intMinutos < 10) {
-            strMinuto = "0" + strMinuto;
-        }
-        return strMinuto;
+        return intMinutos < 10 ? "0" + strMinuto : strMinuto;
     }
 }

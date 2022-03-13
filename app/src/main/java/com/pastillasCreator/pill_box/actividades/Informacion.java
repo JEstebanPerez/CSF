@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.pill_box.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pastillasCreator.pill_box.almacenaje.Pastillero;
+import com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -39,33 +40,20 @@ public class Informacion extends AppCompatActivity {
                 R.id.textoHora,"Hora"
         );
 
-        Map<Integer,Class<? extends AppCompatActivity>> redirect= Map.of(
-                R.id.home,ActividadMain.class,
-                R.id.pastillero,ActividadPastillero.class,
-                R.id.calendario,ActividadCalendario.class,
-                R.id.citas,ActividadCitero.class
-        );
-
         textSetter.forEach((k,v)-> {
             String incomingText = incomingIntent.getStringExtra(v.toLowerCase());
             String textToShow = v.concat(":").concat(incomingText);
             EditText view = findViewById(k);
             view.setText(textToShow);
         });
+
         pos = Integer.parseInt(incomingIntent.getStringExtra("posicion"));
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.calendario);
 
-        bottomNavigationView.setOnItemSelectedListener(menuItem -> {
-            if(redirect.containsKey(menuItem.getItemId())){
-                Class<?> clase = redirect.get(menuItem.getItemId());
-                startActivity(new Intent(getApplicationContext(),clase));
-                overridePendingTransition(0,0);
-                return true;
-            }
-            return false;
-        });
+        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
+        bottomNavigationView.setOnItemSelectedListener(functionsWhenClick::getApply);
     }
 
     public void setHora(String hora){

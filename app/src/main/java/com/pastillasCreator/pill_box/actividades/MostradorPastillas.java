@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
+import android.widget.ListAdapter;
 import android.widget.ListView;
 
 import androidx.annotation.RequiresApi;
@@ -13,11 +14,12 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.pill_box.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pastillasCreator.pill_box.almacenaje.Pastillero;
+import com.pastillasCreator.pill_box.elementosCalendario.ElementoCalendario;
 import com.pastillasCreator.pill_box.elementosCalendario.Pastilla;
 import com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick;
 
-import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class MostradorPastillas extends AppCompatActivity {
 
@@ -33,18 +35,16 @@ public class MostradorPastillas extends AppCompatActivity {
         String dia = incomingIntent.getStringExtra("dia"); //Cogemos la información del dia.
         String fecha = incomingIntent.getStringExtra("fecha");
 
-        listView = (ListView) findViewById(R.id.listViewPastillas);
+        listView = findViewById(R.id.listViewPastillas);
         Pastillero pastillero = Pastillero.getPastillero();
         List<Pastilla> listaPastillas = pastillero.getListaPastillas();
 
-        ArrayList<String> arrayDeNombres = new ArrayList<>();
+        List<String> arrayDeNombres = pastillero.getListaPastillas().stream()
+                .filter(x -> x.getDayOfWeekList()[Integer.parseInt(dia)])
+                .map(ElementoCalendario::getNombre).collect(Collectors.toList());
 
-        for (Pastilla pastilla: listaPastillas) {
-            if(pastilla.getDayOfWeekList()[Integer.parseInt(dia)]) {
-                arrayDeNombres.add(pastilla.getNombre());
-            }
-        }
-        ArrayAdapter arrayAdapter=new ArrayAdapter(this,android.R.layout.simple_list_item_1,arrayDeNombres);
+        int layout = android.R.layout.simple_list_item_1;
+        ListAdapter arrayAdapter=new ArrayAdapter<>(this,layout,arrayDeNombres);
         
         listView.setAdapter(arrayAdapter);
         listView.setOnItemClickListener((adapterView, view, position, id) -> {
@@ -61,12 +61,9 @@ public class MostradorPastillas extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.calendario);
-        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
 
-        bottomNavigationView.setOnItemSelectedListener(menuItem -> {
-            Integer id = menuItem.getItemId();
-            return functionsWhenClick.apply().apply(id);
-        });
+        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
+        bottomNavigationView.setOnItemSelectedListener(functionsWhenClick::getApply);
     }
 
 }

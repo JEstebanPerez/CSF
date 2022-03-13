@@ -3,7 +3,32 @@
   <component name="issues">
     <option name="index">
       <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCalendario.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCitero.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCreadorCitas.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadPastillero.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/EditarCitas.java">
           <value>
             <set />
           </value>
@@ -23,7 +48,27 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CreadorCitas.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PastillasCreador.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Cita.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties">
           <value>
             <set />
           </value>

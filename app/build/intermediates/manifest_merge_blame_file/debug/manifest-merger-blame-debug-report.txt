@@ -1,0 +1,149 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.pill_box"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml
+10
+11    <application
+11-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:5:5-53:19
+12        android:allowBackup="true"
+12-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.7.0] C:\Users\brida\.gradle\caches\transforms-3\21249a56641fb0309777a5ae16ce99ff\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:10:9-35
+19        android:testOnly="true"
+20        android:theme="@style/Theme.Pill_Box" >
+20-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:11:9-46
+21        <activity
+21-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:12:9-14:40
+22            android:name="com.pastillasCreator.pill_box.actividades.EditarCitas"
+22-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:13:13-81
+23            android:exported="false" />
+23-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:14:13-37
+24        <activity
+24-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:15:9-17:40
+25            android:name="com.pastillasCreator.pill_box.actividades.EditarPastilla"
+25-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:16:13-84
+26            android:exported="false" />
+26-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:17:13-37
+27        <activity
+27-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:18:9-20:40
+28            android:name="com.pastillasCreator.pill_box.actividades.Ayuda"
+28-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:19:13-75
+29            android:exported="false" />
+29-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:20:13-37
+30        <activity
+30-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:21:9-23:39
+31            android:name="com.pastillasCreator.pill_box.actividades.ActividadPastillero"
+31-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:22:13-89
+32            android:exported="true" />
+32-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:23:13-36
+33        <activity
+33-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:24:9-26:39
+34            android:name="com.pastillasCreator.pill_box.actividades.MostradorPastillas"
+34-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:25:13-88
+35            android:exported="true" />
+35-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:26:13-36
+36        <activity
+36-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:27:9-29:39
+37            android:name="com.pastillasCreator.pill_box.actividades.Informacion"
+37-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:28:13-81
+38            android:exported="true" />
+38-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:29:13-36
+39        <activity
+39-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:30:9-32:40
+40            android:name="com.pastillasCreator.pill_box.actividades.ActividadCitero"
+40-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:31:13-85
+41            android:exported="false" />
+41-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:32:13-37
+42        <activity
+42-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:33:9-35:40
+43            android:name="com.pastillasCreator.pill_box.actividades.ActividadCalendario"
+43-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:34:13-89
+44            android:exported="false" />
+44-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:35:13-37
+45        <activity
+45-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:36:9-38:39
+46            android:name="com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas"
+46-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:37:13-91
+47            android:exported="true" />
+47-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:38:13-36
+48        <activity
+48-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:39:9-41:39
+49            android:name="com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador"
+49-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:40:13-101
+50            android:exported="true" />
+50-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:41:13-36
+51        <activity
+51-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:42:9-52:20
+52            android:name="com.pastillasCreator.pill_box.actividades.ActividadMain"
+52-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:43:13-83
+53            android:exported="true"
+53-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:44:13-36
+54            android:label="@string/app_name"
+54-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:45:13-45
+55            android:theme="@style/Theme.Pill_Box.NoActionBar" >
+55-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:46:13-62
+56            <intent-filter>
+56-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:47:13-51:29
+57                <action android:name="android.intent.action.MAIN" />
+57-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:48:17-69
+57-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:48:25-66
+58
+59                <category android:name="android.intent.category.LAUNCHER" />
+59-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:50:17-77
+59-->D:\vsp\GIT\CSF\app\src\main\AndroidManifest.xml:50:27-74
+60            </intent-filter>
+61        </activity>
+62
+63        <provider
+63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\brida\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+64            android:name="androidx.startup.InitializationProvider"
+64-->[androidx.emoji2:emoji2:1.0.0] C:\Users\brida\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+65            android:authorities="com.example.pill_box.androidx-startup"
+65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\brida\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+66            android:exported="false" >
+66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\brida\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+67            <meta-data
+67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\brida\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\brida\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+69                android:value="androidx.startup" />
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\brida\.gradle\caches\transforms-3\beb1e8c1d1724370afa1be71eb324942\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+70            <meta-data
+70-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\brida\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+71-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\brida\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+72                android:value="androidx.startup" />
+72-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\brida\.gradle\caches\transforms-3\4d87c3e3b70abeed5e61faf08f3b9b5b\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+73        </provider>
+74
+75        <uses-library
+75-->[androidx.window:window:1.0.0-beta02] C:\Users\brida\.gradle\caches\transforms-3\bc23f1c9b824fd13b6279c80a0caef37\transformed\jetified-window-1.0.0-beta02\AndroidManifest.xml:25:9-27:40
+76            android:name="androidx.window.extensions"
+76-->[androidx.window:window:1.0.0-beta02] C:\Users\brida\.gradle\caches\transforms-3\bc23f1c9b824fd13b6279c80a0caef37\transformed\jetified-window-1.0.0-beta02\AndroidManifest.xml:26:13-54
+77            android:required="false" />
+77-->[androidx.window:window:1.0.0-beta02] C:\Users\brida\.gradle\caches\transforms-3\bc23f1c9b824fd13b6279c80a0caef37\transformed\jetified-window-1.0.0-beta02\AndroidManifest.xml:27:13-37
+78        <uses-library
+78-->[androidx.window:window:1.0.0-beta02] C:\Users\brida\.gradle\caches\transforms-3\bc23f1c9b824fd13b6279c80a0caef37\transformed\jetified-window-1.0.0-beta02\AndroidManifest.xml:28:9-30:40
+79            android:name="androidx.window.sidecar"
+79-->[androidx.window:window:1.0.0-beta02] C:\Users\brida\.gradle\caches\transforms-3\bc23f1c9b824fd13b6279c80a0caef37\transformed\jetified-window-1.0.0-beta02\AndroidManifest.xml:29:13-51
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0-beta02] C:\Users\brida\.gradle\caches\transforms-3\bc23f1c9b824fd13b6279c80a0caef37\transformed\jetified-window-1.0.0-beta02\AndroidManifest.xml:30:13-37
+81    </application>
+82
+83</manifest>

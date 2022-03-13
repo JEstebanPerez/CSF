@@ -3,6 +3,7 @@ package com.pastillasCreator.pill_box.actividades;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -11,15 +12,18 @@ import android.widget.Toast;
 
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pill_box.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 
 public class ActividadCalendario extends AppCompatActivity {
@@ -27,10 +31,9 @@ public class ActividadCalendario extends AppCompatActivity {
     private Button acf;
     private String fecha;
     private int dia;
-    private int año;
-    private int mes;
     private boolean seleccionado;
 
+    @RequiresApi(api = Build.VERSION_CODES.R)
     @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,7 +56,7 @@ public class ActividadCalendario extends AppCompatActivity {
 
                 Date date1 = null;
                 try {
-                    date1=new SimpleDateFormat("dd/MM/yyyy").parse(fecha);
+                    date1=new SimpleDateFormat("dd/MM/yyyy", Locale.GERMANY).parse(fecha);
                 } catch (ParseException e) {
                     e.printStackTrace();
                 }
@@ -91,35 +94,11 @@ public class ActividadCalendario extends AppCompatActivity {
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.calendario);
+        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(menuItem -> {
-            switch (menuItem.getItemId()){
-
-                case R.id.home:
-                    startActivity(new Intent(getApplicationContext(),
-                            ActividadMain.class));
-                    overridePendingTransition(0,0);
-                    return true;
-                case R.id.pastillero:
-                    startActivity(new Intent(getApplicationContext(),
-                            ActividadPastillero.class));
-                    overridePendingTransition(0,0);
-                    return true;
-                case R.id.calendario:
-                    return true;
-                case R.id.citas:
-                    startActivity(new Intent(getApplicationContext(),
-                            ActividadCitero.class));
-                    overridePendingTransition(0,0);
-                    return true;
-                case  R.id.ayuda:
-                    startActivity(new Intent(getApplicationContext(),
-                            Ayuda.class));
-                    overridePendingTransition(0,0);
-                    return true;
-            }
-            return false;
-
+        bottomNavigationView.setOnNavigationItemSelectedListener( menuItem -> {
+            Integer id = menuItem.getItemId();
+            return functionsWhenClick.apply().apply(id);
         });
     }
 

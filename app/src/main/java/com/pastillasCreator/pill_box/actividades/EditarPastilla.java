@@ -4,7 +4,6 @@ import static com.pastillasCreator.pill_box.almacenaje.Pastillero.getPastillero;
 
 import android.app.AlertDialog;
 import android.app.TimePickerDialog;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -13,6 +12,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.SpinnerAdapter;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -39,7 +39,6 @@ public class EditarPastilla extends AppCompatActivity {
     private EditText descrip;
     private EditText tot;
     private TextView hor;
-    private TipoPastilla tipo;
     private Spinner spinner;
     int posicion;
 
@@ -78,26 +77,26 @@ public class EditarPastilla extends AppCompatActivity {
 
         nombr.setText(pastilla.getNombre());
         descrip.setText(pastilla.getDescripcion());
-        tot.setText(Integer.toString(pastilla.getTotal()));
-        hor.setText("Hora" + ":" + pastilla.getHora());
+        String total = Integer.toString(pastilla.getTotal());
+        tot.setText(total);
+        String hora = "Hora:" + pastilla.getHora();
+        hor.setText(hora);
         tip.setText(pastilla.getTipo().toString());
         setTextListaSemana();
         listaSemana.setText(textoLista);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.pastillero);
-        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
 
-        bottomNavigationView.setOnNavigationItemSelectedListener(item -> {
-            Integer id = item.getItemId();
-            return functionsWhenClick.apply().apply(id);
-        });
+        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
+        bottomNavigationView.setOnItemSelectedListener(x -> functionsWhenClick.getApply(x,getApplicationContext(),this));
 
         configuracionSpinner();
         configuracionListaSemana();
     }
 
     // Establece los datos que contendrá el desplegable multiseleccionable de lista de la semana
+    @androidx.annotation.RequiresApi(api = Build.VERSION_CODES.N)
     private void configuracionListaSemana() {
         if (pastilla.getDayOfWeekList() != null) {
             diaSeleccionados = pastilla.getDayOfWeekList();
@@ -106,61 +105,53 @@ public class EditarPastilla extends AppCompatActivity {
         }
         dayOfWeekList = getDiaSeleccionados();
 
-        listaSemana.setOnClickListener(new View.OnClickListener() {
-            @RequiresApi(api = Build.VERSION_CODES.N)
-            @Override
-            public void onClick(View v) {
-                AlertDialog.Builder builder = new AlertDialog.Builder(EditarPastilla.this);
+        listaSemana.setOnClickListener(v -> {
+            AlertDialog.Builder builder = new AlertDialog.Builder(EditarPastilla.this);
 
-                builder.setTitle("Seleccionar día");
-                builder.setCancelable(true);
-                builder.setMultiChoiceItems(diaArray, diaSeleccionados, new DialogInterface.OnMultiChoiceClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which, boolean isChecked) {
-                        if (isChecked) {
-                            listaDia.add(which);
-                            Collections.sort(listaDia);
-                        } else {
-                            listaDia.remove(which);
-                        }
-                    }
-                });
-                builder.setPositiveButton("OK", (dialog, which) -> {
-                    String texto = listaDia.stream()
-                            .map(x -> diaArray[x] + ", ")
-                            .reduce(String::concat).orElse("  ");
-                    int longitud = texto.length();
-                    listaSemana.setText(texto.substring(longitud - 2));
-                    dayOfWeekList = getDiaSeleccionados();
-                });
-                builder.setNegativeButton("Cancelar", (dialog, which) -> dialog.dismiss());
-                builder.setNeutralButton("Limpiar", (dialog, which) -> {
-                    IntStream.range(0, diaSeleccionados.length)
-                            .forEach(x -> diaSeleccionados[x] = false);
-                    listaDia.clear();
-                    listaSemana.setText("");
-                });
-                builder.show();
-            }
+            builder.setTitle("Seleccionar día");
+            builder.setCancelable(true);
+            builder.setMultiChoiceItems(diaArray, diaSeleccionados, (dialog, which, isChecked) -> {
+                if (isChecked) {
+                    listaDia.add(which);
+                    Collections.sort(listaDia);
+                } else {
+                    listaDia.remove(which);
+                }
+            });
+            builder.setPositiveButton("OK", (dialog, which) -> {
+                String texto = listaDia.stream()
+                        .map(x -> diaArray[x] + ", ")
+                        .reduce(String::concat).orElse("  ");
+                int longitud = texto.length();
+                listaSemana.setText(texto.substring(longitud - 2));
+                dayOfWeekList = getDiaSeleccionados();
+            });
+            builder.setNegativeButton("Cancelar", (dialog, which) -> dialog.dismiss());
+            builder.setNeutralButton("Limpiar", (dialog, which) -> {
+                IntStream.range(0, diaSeleccionados.length)
+                        .forEach(x -> diaSeleccionados[x] = false);
+                listaDia.clear();
+                listaSemana.setText("");
+            });
+            builder.show();
         });
     }
 
     private void configuracionSpinner() {
         ArrayList<TipoPastilla> listaPastillas = new ArrayList<>(Arrays.asList(TipoPastilla.values()));
 
-        ArrayAdapter adaptador = new ArrayAdapter(EditarPastilla.this,
-                android.R.layout.simple_spinner_dropdown_item, listaPastillas);
+        int layout = android.R.layout.simple_spinner_dropdown_item;
+        SpinnerAdapter adaptador = new ArrayAdapter<>(EditarPastilla.this,layout, listaPastillas);
 
         spinner.setAdapter(adaptador);
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                tipo = ((TipoPastilla) spinner.getAdapter().getItem(position));
+                spinner.getAdapter().getItem(position);
             }
-
             @Override
             public void onNothingSelected(AdapterView<?> parent) {
-                tipo = pastilla.getTipo();
+
             }
         });
     }
@@ -170,8 +161,8 @@ public class EditarPastilla extends AppCompatActivity {
         int hora = calendar.get(Calendar.HOUR_OF_DAY);
         int min = calendar.get(Calendar.MINUTE);
         TimePickerDialog tmd = new TimePickerDialog(EditarPastilla.this, (timePicker, hourOfDay, minute) -> {
-            String hora1 = hourOfDay + ":" + minute;
-            hor.setText("Hora" + ":" + hora1);
+            String hora1 = "Hora:"+hourOfDay + ":" + minute;
+            hor.setText(hora1);
             pastilla.setHora(hora1);
         }, hora, min, false); // Contexto, listener
         tmd.show(); // Si no ponemos la función show, no se va a mostrar

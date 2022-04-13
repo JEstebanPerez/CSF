@@ -23,10 +23,6 @@ public class Pastilla extends ElementoCalendario {
         this.total = total;
     }
 
-    public void setTipo(TipoPastilla tipo) {
-        this.tipo = tipo;
-    }
-
     public void setHora(String hora) { this.hora = hora; }
 
     public int getTotal() {

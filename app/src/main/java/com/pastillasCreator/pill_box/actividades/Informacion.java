@@ -14,6 +14,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.example.pill_box.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pastillasCreator.pill_box.almacenaje.Pastillero;
+import com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -30,21 +31,13 @@ public class Informacion extends AppCompatActivity {
         setContentView(R.layout.activity_informacion);
         Intent incomingIntent = getIntent(); //llamamos para coger la información de la fecha.
 
-        HashMap<Integer,String> textSetter = (HashMap<Integer, String>) Map.of(
-                R.id.textoNombre,"Nombre",
-                R.id.textoDescripcion,"Descripcion",
-                R.id.textoTotal,"Total",
-                R.id.textoTipo,"Tipo",
-                R.id.textoFecha,"Fecha",
-                R.id.textoHora,"Hora"
-        );
-
-        Map<Integer,Class<? extends AppCompatActivity>> redirect= Map.of(
-                R.id.home,ActividadMain.class,
-                R.id.pastillero,ActividadPastillero.class,
-                R.id.calendario,ActividadCalendario.class,
-                R.id.citas,ActividadCitero.class
-        );
+        HashMap<Integer,String> textSetter = new HashMap<>();
+        textSetter.put(R.id.textoNombre,"Nombre");
+        textSetter.put(R.id.textoDescripcion,"Descripcion");
+        textSetter.put(R.id.textoTotal,"Total");
+        textSetter.put(R.id.textoTipo,"Tipo");
+        textSetter.put(R.id.textoFecha,"Fecha");
+        textSetter.put(R.id.textoHora,"Hora");
 
         textSetter.forEach((k,v)-> {
             String incomingText = incomingIntent.getStringExtra(v.toLowerCase());
@@ -52,20 +45,14 @@ public class Informacion extends AppCompatActivity {
             EditText view = findViewById(k);
             view.setText(textToShow);
         });
+
         pos = Integer.parseInt(incomingIntent.getStringExtra("posicion"));
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.calendario);
 
-        bottomNavigationView.setOnItemSelectedListener(menuItem -> {
-            if(redirect.containsKey(menuItem.getItemId())){
-                Class<?> clase = redirect.get(menuItem.getItemId());
-                startActivity(new Intent(getApplicationContext(),clase));
-                overridePendingTransition(0,0);
-                return true;
-            }
-            return false;
-        });
+        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
+        bottomNavigationView.setOnItemSelectedListener(x -> functionsWhenClick.getApply(x,getApplicationContext(),this));
     }
 
     public void setHora(String hora){

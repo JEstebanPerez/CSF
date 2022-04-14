@@ -1,6 +1,7 @@
-package com.pastillasCreator.pill_box.actividades;
+package com.pastillasCreator.pill_box.generic_activityes;
 
 
+import android.content.Context;
 import android.os.Build;
 import android.os.Bundle;
 
@@ -15,6 +16,7 @@ public abstract class DefaultActivity extends AppCompatActivity {
 
     protected Integer selectedItem = 0;
     protected Integer selectedContentView = 0;
+    protected Context context;
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     public void onCreate(Bundle savedInstanceState) {

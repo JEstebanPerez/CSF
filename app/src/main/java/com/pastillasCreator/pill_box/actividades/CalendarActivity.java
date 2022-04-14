@@ -12,6 +12,7 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 
 import com.example.pill_box.R;
+import com.pastillasCreator.pill_box.generic_activityes.DefaultActivity;
 
 import java.util.Calendar;
 
@@ -26,8 +27,11 @@ public class CalendarActivity extends DefaultActivity {
     @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.selectedItem = R.id.calendario;
-        super.selectedContentView = R.layout.activity_calendario;
+        selectedItem = R.id.calendario;
+        selectedContentView = R.layout.activity_calendario;
+
+        context = CalendarActivity.this;
+
         super.onCreate(savedInstanceState);
 
         CalendarView cal = findViewById(R.id.calendarView);

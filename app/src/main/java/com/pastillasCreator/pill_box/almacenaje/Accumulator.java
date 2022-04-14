@@ -18,10 +18,9 @@ public abstract class Accumulator<T extends CalendarElement> {
         return elements.get(id);
     }
 
-    public boolean saveElement(T element){
-        if(containsElement(element)) return false;
+    public void saveElement(T element){
+        if(containsElement(element)) return;
         elements.add(element);
-        return true;
     }
 
     public boolean containsElement(T element){
@@ -40,4 +39,9 @@ public abstract class Accumulator<T extends CalendarElement> {
     public void removeElement(int pos){
         elements.remove(pos);
     }
+
+    public void removeElement(T element){
+        elements.remove(element);
+    }
+
 }

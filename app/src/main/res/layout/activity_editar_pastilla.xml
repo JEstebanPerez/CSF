@@ -26,7 +26,6 @@
         android:layout_marginTop="24dp"
         android:layout_marginBottom="268dp"
         android:background="@android:drawable/editbox_background"
-        android:drawableEnd="@android:drawable/arrow_down_float"
         android:drawablePadding="16dp"
         android:hint="@string/select_Day"
         android:padding="12dp"
@@ -35,7 +34,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerPastillaEdit"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:drawableEndCompat="@android:drawable/arrow_down_float" />
 
     <EditText
         android:id="@+id/nombrePastillaEdit"
@@ -48,7 +48,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:autofillHints="" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -70,7 +71,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="24dp"
         android:layout_marginBottom="16dp"
-        android:onClick="saveNewAppointment"
+        android:onClick="saveNewItem"
         android:text="@string/save"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
@@ -101,7 +102,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombrePastillaEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/nombrePastillaEdit"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/HoraPastillaEdit"
@@ -140,7 +142,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/DescripcionPastillaEdit" />
+        app:layout_constraintTop_toBottomOf="@+id/DescripcionPastillaEdit"
+        android:autofillHints="" />
 
     <TextView
         android:id="@+id/tipoPastillaEdit"

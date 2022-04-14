@@ -12,46 +12,17 @@ import com.pastillasCreator.pill_box.herramientas.DateManipulator;
 
 import java.time.LocalDateTime;
 
-public class AppointmentCreator implements CalendarElementCreator {
-    private final String name;
-    private final String description;
-    private final String hour;
-    private final String date;
+public class AppointmentCreator extends CalendarElementCreator<Appointment> {
 
-    public AppointmentCreator(String nombre, String descripcion, String hora, String fecha) {
-        this.name = nombre;
-        this.description = descripcion;
-        this.hour = hora;
-        this.date = fecha;
+    public AppointmentCreator(String name, String description, LocalDateTime localDateTime) {
+        super(name,description);
+        this.localDateTime = localDateTime;
+        this.accumulator = AppointmentAccumulator.getAccumulator();
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
-    public CalendarElement createElement() {
-        LocalDateTime formattedDate = DateManipulator.dateFromStringToLocalDateTime(date, hour);
-        return new Appointment(name, description, formattedDate);
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.GINGERBREAD)
-    private void checkFields() {
-        if (name.isEmpty()) {
-            throw new CreatorException(CreatorException.EMPTY_VALUE,"name");
-        }
-        if (description.isEmpty()) {
-            throw new CreatorException(CreatorException.EMPTY_VALUE,"description");
-        }
-        if (hour == null || date == null) {
-            throw new CreatorException(CreatorException.EMPTY_VALUE,"date");
-        }
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    public void saveAppointment() {
-        checkFields();
-
-        Appointment appointment = (Appointment) createElement();
-        AppointmentAccumulator appointmentAccumulator = AppointmentAccumulator.getAppointmentAccumulator();
-
-        appointmentAccumulator.saveElement(appointment);
+    public Appointment createElement() {
+        return new Appointment(name, description, localDateTime);
     }
 }

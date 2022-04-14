@@ -12,40 +12,28 @@ import androidx.annotation.RequiresApi;
 
 import com.example.pill_box.R;
 import com.pastillasCreator.pill_box.almacenaje.AppointmentAccumulator;
+import com.pastillasCreator.pill_box.generic_activityes.AccumulatorActivity;
+import com.pastillasCreator.pill_box.generic_activityes.DefaultActivity;
 
 import java.util.List;
 
-public class AppointmentAccumulatorActivity extends DefaultActivity {
+public class AppointmentAccumulatorActivity extends AccumulatorActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.selectedItem = R.id.citas;
-        super.selectedContentView = R.layout.activity_citero;
+        selectedItem = R.id.citas;
+        selectedContentView = R.layout.activity_citero;
+        context = AppointmentAccumulatorActivity.this;
+
+        accumulator = AppointmentAccumulator.getAccumulator();
+        listId = R.id.listCita;
+        editorClass = AppointmentEditorActivity.class;
+        creatorClass = AppointmentCreatorActivity.class;
+
         super.onCreate(savedInstanceState);
-
-        viewList();
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
-    private void viewList() {
-        AppointmentAccumulator appointmentAccumulator = AppointmentAccumulator.getAppointmentAccumulator();
-        List<String> nameList = appointmentAccumulator.getNameListOfElements();
 
-        ListView listView = findViewById(R.id.listCita);
-        int layout = android.R.layout.simple_list_item_1;
 
-        ListAdapter arrayAdapter= new ArrayAdapter<>(this,layout,nameList);
-
-        listView.setAdapter(arrayAdapter);
-        listView.setOnItemClickListener((parent, view, position, id) -> {
-            Intent i = new Intent(AppointmentAccumulatorActivity.this, AppointmentEditorActivity.class);
-            i.putExtra("posicion", Integer.toString(position));
-            startActivity(i);
-        });
-    }
-
-    public void addAppointment(View view) {
-        startActivity(new Intent(getApplicationContext(), AppointmentCreatorActivity.class));
-    }
 }

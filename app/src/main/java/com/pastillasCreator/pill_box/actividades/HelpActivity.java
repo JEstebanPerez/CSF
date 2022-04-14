@@ -7,14 +7,18 @@ import android.widget.TextView;
 import androidx.annotation.RequiresApi;
 
 import com.example.pill_box.R;
+import com.pastillasCreator.pill_box.generic_activityes.DefaultActivity;
 
 public class HelpActivity extends DefaultActivity {
 
     @RequiresApi(api = Build.VERSION_CODES.R)
     @Override
     public void onCreate(Bundle savedInstanceState) {
-        super.selectedItem = R.id.ayuda;
-        super.selectedContentView = R.layout.activity_ayuda;
+        selectedItem = R.id.ayuda;
+        selectedContentView = R.layout.activity_ayuda;
+
+        context = HelpActivity.this;
+
         super.onCreate(savedInstanceState);
 
         TextView helpingText = findViewById(R.id.textViewAyuda);

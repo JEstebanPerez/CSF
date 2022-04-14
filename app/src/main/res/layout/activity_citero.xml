@@ -33,7 +33,7 @@
         android:layout_marginStart="137dp"
         android:layout_marginEnd="141dp"
         android:layout_marginBottom="17dp"
-        android:onClick="addAppointment"
+        android:onClick="addElement"
         android:text="@string/add_appointment" />
 
 

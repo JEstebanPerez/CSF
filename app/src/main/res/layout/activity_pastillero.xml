@@ -31,7 +31,7 @@
         android:layout_marginStart="131dp"
         android:layout_marginEnd="138dp"
         android:layout_marginBottom="23dp"
-        android:onClick="addPillView"
+        android:onClick="addElement"
         android:text="@string/add_pill"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"

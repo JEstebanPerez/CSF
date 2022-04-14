@@ -1,69 +1,45 @@
 package com.pastillasCreator.pill_box.creadorElementosCalendario;
 
 
-import android.app.TimePickerDialog;
-import android.content.Context;
-import android.content.Intent;
 import android.os.Build;
-import android.view.View;
-import android.widget.TextView;
-import android.widget.TimePicker;
-import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
-import com.pastillasCreator.pill_box.actividades.PillAccumulatorActivity;
-import com.pastillasCreator.pill_box.actividades.PillEditorActivity;
 import com.pastillasCreator.pill_box.almacenaje.PillAccumulator;
-import com.pastillasCreator.pill_box.elementosCalendario.CalendarElement;
+import com.pastillasCreator.pill_box.elementosCalendario.Appointment;
 import com.pastillasCreator.pill_box.elementosCalendario.Pill;
 import com.pastillasCreator.pill_box.elementosCalendario.PillType;
 import com.pastillasCreator.pill_box.exceptions.CreatorException;
 import com.pastillasCreator.pill_box.herramientas.DateManipulator;
 
-import java.util.Calendar;
+import java.time.LocalDateTime;
+import java.util.Arrays;
 
-public class PillCreator implements CalendarElementCreator {
+public class PillCreator extends CalendarElementCreator<Pill> {
 
-    private String name;
-    private final String description;
     private final int total;
-    private PillType type;
-    private String hour;
-    private TextView hourTextView = null;
+    private final PillType type;
+    private final String hour;
     private final boolean[] selectedDaysArray;
+    private LocalDateTime date;
 
-    public PillCreator(String name, String description, int total, boolean[] selectedDaysArray, PillType pillType) {
-        this.name = name;
-        this.description = description;
+    public PillCreator(String name, String description, int total,String hour,
+                       boolean[] selectedDaysArray, PillType type) {
+        super(name,description);
+        accumulator = PillAccumulator.getPillAccumulator();
         this.total = total;
         this.selectedDaysArray = selectedDaysArray;
-        type = pillType;
+        this.type = type;
+        this.hour = hour;
     }
 
     @Override
     public Pill createElement() {
-        return new Pill(name, description, total, type);
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public void setType(PillType type) {
-        this.type = type;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public PillType getType() {
-        return type;
+        return new Pill(name, description,date, total, type,selectedDaysArray);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
-    public void saveIfPossible() {
+    protected void checkFields() {
         if (name.isEmpty()) {
             throw new CreatorException(CreatorException.EMPTY_VALUE, "name");
         }
@@ -72,32 +48,27 @@ public class PillCreator implements CalendarElementCreator {
             throw new CreatorException(CreatorException.NOT_VALID_VALUE, pillMessage());
         }
 
+        if (hour.isEmpty()) {
+            throw new CreatorException(CreatorException.EMPTY_VALUE, "hour");
+        }
+
         if (description.isEmpty()) {
             throw new CreatorException(CreatorException.EMPTY_VALUE, "description");
         }
 
-        Pill pill = createElement();
-
-        PillAccumulator pillAccumulator = PillAccumulator.getPillAccumulator();
-        int numOpcionales = countOptionalData();
-
-        if (numOpcionales == 1) {
-            throw new CreatorException(CreatorException.EMPTY_VALUE, "optionals");
+        if(!anySelectedDay()){
+            throw new CreatorException(CreatorException.EMPTY_VALUE, "days");
         }
-
-        pillAccumulator.saveElement(pill);
+        date = DateManipulator.dateFromStringToLocalDateTime("01/01/2022",hour);
     }
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    private int countOptionalData() {
-        int count = 0;
+    private boolean anySelectedDay(){
         for (boolean day : selectedDaysArray) {
             if (day) {
-                count = 1;
-                break;
+                return true;
             }
         }
-        return count + (hour != null ? 1 : 0);
+        return false;
     }
 
     private boolean isValidPillNumber() {
@@ -105,26 +76,7 @@ public class PillCreator implements CalendarElementCreator {
     }
 
     private String pillMessage() {
-        if (total < 1) {
-            return "less than the minimal";
-        }
-        return "more than the maximal";
-    }
-
-    public void openHour(View view, Context context, TextView hourTextView) {
-        Calendar calendar = Calendar.getInstance();
-        int hour = calendar.get(Calendar.HOUR_OF_DAY);
-        int minute = calendar.get(Calendar.MINUTE);
-        this.hourTextView = hourTextView;
-        new TimePickerDialog(context, this::getHourByTimePicker, hour,
-                minute, false).show();
-    }
-
-    private void getHourByTimePicker(TimePicker timePicker, int hour, int minute) {
-        String minute_value = DateManipulator.inTimeToStringValue(minute);
-        String hour_value = DateManipulator.inTimeToStringValue(hour);
-        this.hour = "Hora:" + hour_value + ":" + minute_value;
-        hourTextView.setText(this.hour);
+        return total<1 ? "less than the minimal" : "more than the maximal";
     }
 
 }

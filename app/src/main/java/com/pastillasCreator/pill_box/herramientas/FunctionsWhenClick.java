@@ -30,10 +30,10 @@ public class FunctionsWhenClick extends AppCompatActivity {
         elements.put(R.id.ayuda, HelpActivity.class);
         elements.put(R.id.citas, AppointmentAccumulatorActivity.class);
         Integer menuId = menuItem.getItemId();
-        Object o = elements.computeIfPresent(menuId, (id, clase) -> {
-            activity.startActivity(new Intent(applicationContext, clase));
+        Object o = elements.computeIfPresent(menuId, (id, tClass) -> {
+            activity.startActivity(new Intent(applicationContext, tClass));
             activity.overridePendingTransition(0, 0);
-            return clase;
+            return tClass;
         });
         return o != null;
     }

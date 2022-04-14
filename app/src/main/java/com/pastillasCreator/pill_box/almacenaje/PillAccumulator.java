@@ -5,14 +5,14 @@ import com.pastillasCreator.pill_box.elementosCalendario.Pill;
 
 public class PillAccumulator extends Accumulator<Pill> {
 
-    private static PillAccumulator pillAccumulator;
+    private static PillAccumulator instance = null;
 
     private PillAccumulator() {}
 
     public static PillAccumulator getPillAccumulator(){
-        if (pillAccumulator == null) {
-            pillAccumulator = new PillAccumulator();
+        if (instance == null) {
+            instance = new PillAccumulator();
         }
-        return pillAccumulator;
+        return instance;
     }
 }

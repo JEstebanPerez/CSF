@@ -1,45 +1,37 @@
 package com.pastillasCreator.pill_box.elementosCalendario;
 
-import com.pastillasCreator.pill_box.herramientas.ObjectComparator;
-
-import java.util.Arrays;
+import java.time.LocalDateTime;
 
 public class Pill extends CalendarElement {
 
     private int total;
     private PillType type;
     private boolean[] dayOfWeekList;
-    private String hour;
 
-    public Pill(String name, String description, int total, PillType type) {
-        super(name, description);
+    public Pill(String name, String description, LocalDateTime date, int total, PillType type,boolean[] dayOfWeekList) {
+        super(name, description,date);
         this.total = total;
         this.type = type;
-    }
-
-    public void setDayOfWeekList(boolean[] dayOfWeekList) {
         this.dayOfWeekList = dayOfWeekList;
     }
 
-    public void setTotal(int total) {
-        this.total = total;
-    }
-
-    public void setHour(String hour) { this.hour = hour; }
-
     public int getTotal() {
         return total;
-    }
-
-    public boolean[] getDayOfWeekList() {
-        return dayOfWeekList;
     }
 
     public PillType getType() {
         return type;
     }
 
-    public String getHour() { return hour; }
+    public boolean[] getDayOfWeekList(){
+        return dayOfWeekList;
+    }
 
+    public void change(Pill calendarElement){
+        super.change(calendarElement);
+        total = calendarElement.total;
+        type = calendarElement.type;
+        dayOfWeekList = calendarElement.dayOfWeekList;
+    }
 }
 

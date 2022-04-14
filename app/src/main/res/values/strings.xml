@@ -28,8 +28,6 @@
     <string name="add_pills">Añadir Pastillas</string>
     <string name="n_pastillas_que_tienes">Nº Pastillas que tienes</string>
     <string name="cambiar_hora">Cambiar hora</string>
-    <string name="save">Guardar</string>
-    <string name="select_Day">Seleccionar Día</string>
     <!-- Strings used for fragments for navigation -->
 
 </resources>

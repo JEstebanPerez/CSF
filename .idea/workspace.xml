@@ -12,74 +12,25 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="Added changes and refactoring class, little errors on the pills creator and editor">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AccumulatorActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AppointmentBuilderActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/BuilderActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/CreatorActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/PillBuilderActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/AppointmentAccumulatorActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/AppointmentCreatorActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/AppointmentEditorActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/CalendarActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/HelpActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/InfoActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/MainActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillAccumulatorActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillCreatorActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillEditorActivityTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillShowerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/PillAccumulatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/creadorElementosCalendario/AppointmentCreatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/data_fixture/AppointmentDataFixture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/data_fixture/PillDataFixture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/DateManipulatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClickTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/ObjectComparatorTest.java" afterDir="false" />
+    <list default="true" id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="Only fails on edit, added but need to me changed test">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/compile_and_runtime_not_namespaced_r_class_jar/debug/R.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.dex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/runtime_symbol_list/debug/R.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/symbol_list_with_package_name/debug/package-aware-r.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentAccumulatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentAccumulatorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentCreatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentCreatorActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentEditorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentEditorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/CalendarActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/CalendarActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/DefaultActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/DefaultActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/HelpActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/HelpActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/InfoActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/InfoActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MainActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillAccumulatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillAccumulatorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillCreatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillCreatorActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillEditorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillEditorActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillShower.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillShower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/Accumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/Accumulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/PillAccumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/PillAccumulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/AppointmentCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/AppointmentCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CalendarElementCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CalendarElementCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Appointment.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Appointment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/CalendarElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/CalendarElement.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Pill.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Pill.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/exceptions/CreatorException.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/exceptions/CreatorException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AccumulatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AccumulatorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AppointmentBuilderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AppointmentBuilderActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/CreatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/CreatorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/PillBuilderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/PillBuilderActivity.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/DateManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/DateManipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_citas_creator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_citas_creator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_citero.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_citero.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_citas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_citas.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_pastilla.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_pastilla.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillas_creator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillas_creator.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillero.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillero.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_informacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_informacion.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,6 +77,7 @@
       <list>
         <option value="JUnit3 Test Class" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -151,6 +103,8 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="android-custom-viewC:/Users/brida/AppData/Local/Android/Sdk/sources/android-31/android/widget/AdapterView.java_AdapterView_DIMENSIONS" value="1080&#10;1920" />
+    <property name="android-custom-viewC:/Users/brida/AppData/Local/Android/Sdk/sources/android-31/android/widget/AdapterView.java_SELECTED" value="AdapterView" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit3" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit3" value="junit.framework.TestCase" />
@@ -355,7 +309,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649900247453</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Only fails on edit, added but need to me changed test">
+      <created>1649950559230</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1649950559230</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -385,20 +346,26 @@
     <MESSAGE value="Fixed problems of execution" />
     <MESSAGE value="Working refactored program" />
     <MESSAGE value="Added changes and refactoring class, little errors on the pills creator and editor" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added changes and refactoring class, little errors on the pills creator and editor" />
+    <MESSAGE value="Only fails on edit, added but need to me changed test" />
+    <option name="LAST_COMMIT_MESSAGE" value="Only fails on edit, added but need to me changed test" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillEditorActivity.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="18" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/PillBuilderActivity.java</url>
+          <line>121</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
-          <url>file://$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillEditorActivity.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="27" />
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AppointmentBuilderActivity.java</url>
+          <line>67</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AppointmentBuilderActivity.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="39" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -49,7 +49,7 @@ public class InfoActivity extends DefaultActivity {
 
     }
 
-    public void removePill(View view){
+    public void removeItem(View view){
         PillAccumulator pillAccumulator = PillAccumulator.getPillAccumulator();
         pillAccumulator.removeElement(pill);
         Intent i = new Intent(this, CalendarActivity.class);

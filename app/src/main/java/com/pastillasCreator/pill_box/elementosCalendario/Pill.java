@@ -27,11 +27,12 @@ public class Pill extends CalendarElement {
         return dayOfWeekList;
     }
 
-    public void change(Pill calendarElement){
+    public void change(CalendarElement calendarElement){
+        Pill pill = (Pill)calendarElement;
         super.change(calendarElement);
-        total = calendarElement.total;
-        type = calendarElement.type;
-        dayOfWeekList = calendarElement.dayOfWeekList;
+        total = pill.total;
+        type = pill.type;
+        dayOfWeekList = pill.dayOfWeekList;
     }
 }
 

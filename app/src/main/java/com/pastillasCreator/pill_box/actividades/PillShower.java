@@ -33,7 +33,6 @@ public class PillShower extends DefaultActivity {
 
         Intent incomingIntent = getIntent();
         String day = incomingIntent.getStringExtra("dia");
-        String date = incomingIntent.getStringExtra("fecha");
 
         ListView listView = findViewById(R.id.listViewPastillas);
         PillAccumulator pillAccumulator = PillAccumulator.getPillAccumulator();

@@ -14,7 +14,7 @@ import com.pastillasCreator.pill_box.almacenaje.Accumulator;
 
 import java.util.List;
 
-public class AccumulatorActivity extends DefaultActivity{
+public abstract class AccumulatorActivity extends DefaultActivity{
 
     protected Accumulator<?> accumulator;
     protected Integer listId;

@@ -64,15 +64,12 @@ public abstract class AppointmentBuilderActivity extends CreatorActivity<Appoint
     @RequiresApi(api = Build.VERSION_CODES.O)
     public void saveNewItem(View view) {
         super.readFromViews();
-        LocalDateTime localDateTime = DateManipulator.dateFromStringToLocalDateTime(date,hour);
-
-        elementCreator = new AppointmentCreator(name, description, localDateTime);
-
+        try {
+            LocalDateTime localDateTime = DateManipulator.dateFromStringToLocalDateTime(date, hour);
+            elementCreator = new AppointmentCreator(name, description, localDateTime);
+        }catch (Exception e){
+            Toast.makeText(context,e.getMessage(),Toast.LENGTH_SHORT).show();
+        }
         super.saveNewItem(view);
     }
-
-
-
-
-
 }

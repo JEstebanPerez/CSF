@@ -1,17 +1,12 @@
 package com.pastillasCreator.pill_box.actividades;
 
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
 import com.example.pill_box.R;
-import com.pastillasCreator.pill_box.almacenaje.AppointmentAccumulator;
-import com.pastillasCreator.pill_box.elementosCalendario.Appointment;
 import com.pastillasCreator.pill_box.generic_activityes.AppointmentBuilderActivity;
 
 public class AppointmentEditorActivity extends AppointmentBuilderActivity {
@@ -30,17 +25,6 @@ public class AppointmentEditorActivity extends AppointmentBuilderActivity {
         context = AppointmentEditorActivity.this;
 
         super.onCreate(savedInstanceState);
-    }
-
-    public void removeAppointment(View view) {
-        Toast.makeText(AppointmentEditorActivity.this, "Cita borrada correctamente", Toast.LENGTH_LONG).show();
-
-
-        accumulator.removeElement(elementToUpdate);
-
-        Intent i = new Intent(this, AppointmentAccumulatorActivity.class);
-        startActivity(i);
-
     }
 
 }

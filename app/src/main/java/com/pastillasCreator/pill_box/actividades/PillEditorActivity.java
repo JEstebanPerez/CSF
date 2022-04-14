@@ -10,8 +10,6 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 
 import com.example.pill_box.R;
-import com.pastillasCreator.pill_box.almacenaje.PillAccumulator;
-import com.pastillasCreator.pill_box.elementosCalendario.Pill;
 import com.pastillasCreator.pill_box.generic_activityes.PillBuilderActivity;
 
 import java.util.stream.IntStream;
@@ -39,14 +37,12 @@ public class PillEditorActivity extends PillBuilderActivity {
         TextView tip = findViewById(R.id.tipoPastillaEdit);
 
         String total = elementToUpdate.getTotal()+"";
-        String hora = elementToUpdate.getHour();
         selectedDays = elementToUpdate.getDayOfWeekList();
-        String type = elementToUpdate.getType().toString();
+        type = elementToUpdate.getType();
 
         activityTotalEditText.setText(total);
-        hourTextView.setText(hora);
 
-        tip.setText(type);
+        tip.setText(type.name());
         setWeekListText();
         weekListTextView.setText(textList);
     }
@@ -63,19 +59,6 @@ public class PillEditorActivity extends PillBuilderActivity {
                     .forEach(stringBuilder::append);
             textList = stringBuilder;
         }
-    }
-
-
-    public void removePill(View view) {
-
-        PillAccumulator pillAccumulator = PillAccumulator.getPillAccumulator();
-
-        pillAccumulator.removeElement(elementToUpdate);
-
-        Intent i = new Intent(PillEditorActivity.this, PillAccumulatorActivity.class);
-        startActivity(i);
-        Toast.makeText(PillEditorActivity.this, "Pastilla borrada correctamente", Toast.LENGTH_LONG).show();
-
     }
 
 }

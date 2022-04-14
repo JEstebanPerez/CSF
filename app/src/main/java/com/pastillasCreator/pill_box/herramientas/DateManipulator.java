@@ -15,15 +15,16 @@ public class DateManipulator {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public static LocalDateTime dateFromStringToLocalDateTime(String days, String hour) {
-        try {
-            String date = days + " " + hour;
-            String pattern = CalendarElement.LOCAL_DATE_FORMAT + " " + CalendarElement.LOCAL_MINUTE_FORMAT;
-            DateTimeFormatter format = DateTimeFormatter.ofPattern(pattern);
-
-            return LocalDateTime.parse(date, format);
-        }catch (Exception e){
-            throw new CreatorException(CreatorException.EMPTY_VALUE,"date");
+        if(days.isEmpty()){
+            throw new CreatorException(CreatorException.EMPTY_VALUE,"days");
         }
+        if(hour.isEmpty()){
+            throw new CreatorException(CreatorException.EMPTY_VALUE,"hours");
+        }
+        String date = days + " " + hour;
+        String pattern = CalendarElement.LOCAL_DATE_FORMAT + " " + CalendarElement.LOCAL_MINUTE_FORMAT;
+        DateTimeFormatter format = DateTimeFormatter.ofPattern(pattern);
+        return LocalDateTime.parse(date, format);
     }
 
     public static String inTimeToStringValue(int time){

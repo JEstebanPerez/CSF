@@ -1,7 +1,6 @@
 package com.pastillasCreator.pill_box.generic_activityes;
 
 import android.app.AlertDialog;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -16,7 +15,6 @@ import android.widget.Toast;
 import androidx.annotation.RequiresApi;
 
 import com.pastillasCreator.pill_box.actividades.PillAccumulatorActivity;
-import com.pastillasCreator.pill_box.almacenaje.AppointmentAccumulator;
 import com.pastillasCreator.pill_box.almacenaje.PillAccumulator;
 import com.pastillasCreator.pill_box.creadorElementosCalendario.PillCreator;
 import com.pastillasCreator.pill_box.elementosCalendario.Pill;
@@ -29,6 +27,7 @@ import java.util.Collections;
 import java.util.List;
 
 public abstract class PillBuilderActivity extends CreatorActivity<Pill> {
+
     protected EditText activityTotalEditText;
     protected Spinner spinner;
     protected TextView weekListTextView;

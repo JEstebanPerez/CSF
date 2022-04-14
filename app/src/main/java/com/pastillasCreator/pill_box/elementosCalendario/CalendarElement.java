@@ -65,19 +65,18 @@ public abstract class CalendarElement implements Serializable {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public String getHour(){
-        return date.getHour() + ":" + date.getMinute();
+        return CalendarElement.getMinuteFormat(date.getHour(),date.getMinute());
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     public String getStringShowingDate(){
-        return date.getDayOfMonth()+ "/"+
-                date.getMonthValue() + "/" +
-                date.getYear();
+        return CalendarElement.getDayFormatted(date.getDayOfMonth(), date.getMonthValue(),date.getYear());
     }
 
     public void change(CalendarElement calendarElement){
         name = calendarElement.name;
         description = calendarElement.description;
         date = calendarElement.date;
+
     }
 }

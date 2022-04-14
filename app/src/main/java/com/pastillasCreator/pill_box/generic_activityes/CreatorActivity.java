@@ -53,9 +53,20 @@ public abstract class CreatorActivity<T extends CalendarElement> extends Builder
             }else{
                 elementCreator.saveElement();
             }
+            elementToUpdate = null;
             startActivity(new Intent(context, menu));
         } catch(Exception e){
             Toast.makeText(this, e.getMessage(), Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public void removeItem(View view) {
+        if(elementToUpdate!=null){
+            accumulator.removeElement(elementToUpdate);
+            Intent i = new Intent(context, menu);
+            startActivity(i);
+            Toast.makeText(context, "Pastilla borrada correctamente", Toast.LENGTH_LONG).show();
+        }
+
     }
 }

@@ -1,7 +1,6 @@
-
 package com.pastillasCreator.pill_box.actividades;
 
-import android.annotation.SuppressLint;
+
 import android.os.Build;
 import android.os.Bundle;
 
@@ -12,19 +11,20 @@ import com.example.pill_box.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick;
 
-public class ActividadMain extends AppCompatActivity {
+public abstract class DefaultActivity extends AppCompatActivity {
+
+    protected Integer selectedItem = 0;
+    protected Integer selectedContentView = 0;
 
     @RequiresApi(api = Build.VERSION_CODES.R)
-    @SuppressLint("NonConstantResourceId")
-    @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(selectedContentView);
 
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
-        bottomNavigationView.setSelectedItemId(R.id.home);
+        bottomNavigationView.setSelectedItemId(selectedItem);
 
-        FunctionsWhenClick functionsWhenClick = new FunctionsWhenClick();
-        bottomNavigationView.setOnItemSelectedListener(x -> functionsWhenClick.getApply(x,getApplicationContext(),this));
+        bottomNavigationView.setOnItemSelectedListener(x -> FunctionsWhenClick.getApply(x, getApplicationContext(), this));
     }
+
 }

@@ -12,27 +12,61 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="Fixed problems of execution">
-      <change afterPath="$PROJECT_DIR$/app/build/generated/source/buildConfig/debug/com/example/pill_box/BuildConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCalendario.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCalendario.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCitero.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCitero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCreadorCitas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCreadorCitas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadMain.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadPastillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadPastillero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/Ayuda.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/Ayuda.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/EditarCitas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/EditarCitas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/EditarPastilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/EditarPastilla.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/Informacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/Informacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MostradorPastillas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MostradorPastillas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CreadorCitas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CreadorCitas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PastillasCreador.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PastillasCreador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Pastilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Pastilla.java" afterDir="false" />
+    <list default="true" id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="Added changes and refactoring class, little errors on the pills creator and editor">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentCreatorActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentEditorActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillCreatorActivity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/Accumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/PillAccumulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/AppointmentCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CalendarElementCreator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Appointment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/CalendarElement.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/exceptions/CreatorException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/DateManipulator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/ObjectComparator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.dex" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/project_dex_archive/debug/out/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.dex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/stable_resource_ids_file/debug/stableIds.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/Actividad.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/DefaultActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCalendario.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/CalendarActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCitero.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentAccumulatorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadCreadorCitas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/ActividadPastillero.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillAccumulatorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/Ayuda.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/HelpActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/EditarCitas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/EditarPastilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillEditorActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/Informacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/InfoActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MostradorPastillas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillShower.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/Citero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/Pastillero.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CreadorCitas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CreadorElementosCalendario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PastillasCreador.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Cita.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/ElementoCalendario.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Pastilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/Pill.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/TipoPastilla.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/PillType.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/ManipuladorFechas.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/ManipuladorFechas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/ManipuladorFechas.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_ayuda.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ayuda.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendario.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_calendario.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_citas_creator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_citas_creator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_citero.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_citero.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_citas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_citas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_pastilla.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_editar_pastilla.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_informacion.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_informacion.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_mostrador_pastillas.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_mostrador_pastillas.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillas_creator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillas_creator.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillero.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_pastillero.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,8 +110,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit3 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -88,9 +122,6 @@
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedIndex" value="1" />
   </component>
   <component name="ProjectId" id="27jvVritefmvIBYO0RQEzDb2PxQ" />
   <component name="ProjectLevelVcsManager">
@@ -113,7 +144,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="PsdUISettings">
     <option name="MODULE_TAB" value="Properties" />
@@ -200,7 +231,25 @@
       <option name="presentableId" value="Default" />
       <updated>1649846335757</updated>
     </task>
+    <task id="LOCAL-00001" summary="Working refactored program">
+      <created>1649870807587</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1649870807587</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -216,6 +265,24 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Fixed problems of execution" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixed problems of execution" />
+    <MESSAGE value="Working refactored program" />
+    <MESSAGE value="Added changes and refactoring class, little errors on the pills creator and editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added changes and refactoring class, little errors on the pills creator and editor" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillAccumulatorActivity.java</url>
+          <line>47</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillAccumulatorActivity.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

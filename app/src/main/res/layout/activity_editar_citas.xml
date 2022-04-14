@@ -4,21 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pastillasCreator.pill_box.actividades.EditarCitas">
+    tools:context="com.pastillasCreator.pill_box.actividades.AppointmentEditorActivity">
 
     <Button
         android:id="@+id/button7"
         android:layout_width="124dp"
         android:layout_height="73dp"
-        android:layout_marginTop="32dp"
         android:layout_marginBottom="116dp"
-        android:onClick="borrarCita"
-        android:text="Eliminar"
+        android:onClick="removeAppointment"
+        android:text="@string/remove"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.198"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFecha" />
+        app:layout_constraintEnd_toStartOf="@+id/button6"
+        app:layout_constraintHorizontal_bias="0.606"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/button6"
@@ -26,13 +24,12 @@
         android:layout_height="73dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="116dp"
-        android:onClick="guardar"
-        android:text="Guardar"
+        android:onClick="saveNewAppointment"
+        android:text="@string/save"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.759"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/buttonFecha" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <Button
         android:id="@+id/buttonFecha2"
@@ -41,8 +38,8 @@
         android:layout_marginTop="24dp"
         android:layout_marginEnd="28dp"
         android:layout_marginBottom="96dp"
-        android:onClick="abrirCalendario"
-        android:text="Seleccionar fecha"
+        android:onClick="openCalendar"
+        android:text="@string/seleccionar_fecha"
         app:layout_constraintBottom_toTopOf="@+id/button6"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3"
@@ -77,8 +74,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:onClick="abrirHora"
-        android:text="Seleccionar Hora"
+        android:onClick="showHour"
+        android:text="@string/seleccionar_hora"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.786"
         app:layout_constraintStart_toEndOf="@+id/horaCitaEdit"

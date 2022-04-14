@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pastillasCreator.pill_box.actividades.ActividadMain"
+    tools:context="com.pastillasCreator.pill_box.actividades.MainActivity"
     android:background="@color/Homepage1">
 
 
@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="125dp"
         android:layout_marginTop="80dp"
-        android:text="MyMedicine"
+        android:text="@string/title"
         android:textColor="@color/Blanco1"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -41,7 +41,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginTop="156dp"
         android:layout_marginEnd="83dp"
-        android:src="@drawable/pill2" />
+        android:src="@drawable/pill2"
+        android:contentDescription="@string/big_pill" />
 
 
     <ImageView
@@ -51,7 +52,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="262dp"
         android:layout_marginBottom="30dp"
-        android:src="@drawable/pill3" />
+        android:src="@drawable/pill3"
+        android:contentDescription="@string/unique_blue_pill" />
 
 
     <ImageView
@@ -61,7 +63,8 @@
         android:layout_alignParentEnd="true"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="27dp"
-        android:src="@drawable/pill4" />
+        android:src="@drawable/pill4"
+        android:contentDescription="@string/multiple_pills" />
 
     <TextView
         android:layout_width="315dp"
@@ -71,7 +74,7 @@
         android:layout_marginStart="65dp"
         android:layout_marginTop="400dp"
         android:layout_marginBottom="160dp"
-        android:text="No vuelva a olvidarse"
+        android:text="@string/no_forget"
         android:textColor="@color/Blanco1"
         android:textSize="30sp"
         android:textStyle="bold"

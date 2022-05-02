@@ -3,7 +3,6 @@ package com.pastillasCreator.pill_box.herramientas;
 import junit.framework.TestCase;
 
 import java.time.LocalDateTime;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;

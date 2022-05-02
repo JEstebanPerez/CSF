@@ -3,9 +3,6 @@ package com.pastillasCreator.pill_box.almacenaje;
 import com.pastillasCreator.pill_box.DATA_FIXTURE.AppointmentDataFixture;
 import com.pastillasCreator.pill_box.elementosCalendario.Appointment;
 import com.pastillasCreator.pill_box.elementosCalendario.CalendarElement;
-import com.pastillasCreator.pill_box.elementosCalendario.Pill;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 import junit.framework.TestCase;
 
@@ -20,7 +17,7 @@ import java.util.stream.Collectors;
 
 public class AccumulatorTest extends TestCase {
 
-    private Accumulator<Appointment> accumulator = AppointmentAccumulator.getAccumulator();
+    private final Accumulator<Appointment> accumulator = AppointmentAccumulator.getAccumulator();
 
     @BeforeEach
     public void setUp() {

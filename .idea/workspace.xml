@@ -12,20 +12,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="Working software with SOLID principles applied">
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/DATA_FIXTURE/AppointmentDataFixture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/DATA_FIXTURE/CalendarElementDataFixture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/DATA_FIXTURE/PillDataFixture.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AccumulatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/creadorElementosCalendario/CalendarElementCreatorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/elementosCalendario/CalendarElementTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/elementosCalendario/PillTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.0.2/gc.properties" beforeDir="false" />
+    <list default="true" id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="Little changes to imports and optimized test imports">
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
@@ -33,45 +20,17 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentAccumulatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/AppointmentAccumulatorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillEditorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillEditorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillShower.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/PillShower.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/Accumulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/almacenaje/Accumulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/CalendarElement.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/elementosCalendario/CalendarElement.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AccumulatorActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AccumulatorActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AppointmentBuilderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/AppointmentBuilderActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/BuilderActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/BuilderActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/DefaultActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/generic_activityes/DefaultActivity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/DateManipulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/DateManipulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/ObjectComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/herramientas/ObjectComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/AppointmentAccumulatorActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/AppointmentCreatorActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/AppointmentEditorActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/CalendarActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/HelpActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/InfoActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/MainActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillAccumulatorActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillCreatorActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillEditorActivityTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/actividades/PillShowerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/DATA_FIXTURE/CalendarElementDataFixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/DATA_FIXTURE/CalendarElementDataFixture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AccumulatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/PillAccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/PillAccumulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/creadorElementosCalendario/AppointmentCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/creadorElementosCalendario/AppointmentCreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/creadorElementosCalendario/PillCreatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/data_fixture/AppointmentDataFixture.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/data_fixture/PillDataFixture.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/DateManipulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/DateManipulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClickTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/FunctionsWhenClickTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/ObjectComparatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/ObjectComparatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[C:\Users\brida\.android\avd\Pixel_2_API_30.avd]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -173,7 +132,7 @@
       <recent name="com.pastillasCreator.pill_box.creadorElementosCalendario" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.DateManipulatorTest">
+  <component name="RunManager" selected="Android App.app">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="Pill_Box.app" />
       <option name="DEPLOY" value="true" />
@@ -254,27 +213,6 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
-    <configuration name="CalendarElementTest.testGetStringShowingDate" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" value="--tests &quot;com.pastillasCreator.pill_box.elementosCalendario.CalendarElementTest.testGetStringShowingDate&quot;" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value=":app:testDebugUnitTest" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
     <configuration name="DateManipulatorTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -338,13 +276,34 @@
       <DebugAllEnabled>false</DebugAllEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="Tests in 'Pill_Box.app'" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="--tests *" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value=":app:testDebugUnitTest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>false</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.Tests in 'Pill_Box.app'" />
         <item itemvalue="Gradle.DateManipulatorTest" />
         <item itemvalue="Gradle.DateManipulatorTest.testDateFromStringToLocalDateTime" />
         <item itemvalue="Gradle.ObjectComparatorTest.testCompareObjects" />
         <item itemvalue="Gradle.CalendarElementTest" />
-        <item itemvalue="Gradle.CalendarElementTest.testGetStringShowingDate" />
       </list>
     </recent_temporary>
   </component>
@@ -385,7 +344,14 @@
       <option name="project" value="LOCAL" />
       <updated>1649953051352</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added Tests">
+      <created>1651494012327</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651494012327</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -417,7 +383,9 @@
     <MESSAGE value="Added changes and refactoring class, little errors on the pills creator and editor" />
     <MESSAGE value="Only fails on edit, added but need to me changed test" />
     <MESSAGE value="Working software with SOLID principles applied" />
-    <option name="LAST_COMMIT_MESSAGE" value="Working software with SOLID principles applied" />
+    <MESSAGE value="Added Tests" />
+    <MESSAGE value="Little changes to imports and optimized test imports" />
+    <option name="LAST_COMMIT_MESSAGE" value="Little changes to imports and optimized test imports" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -449,7 +417,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AccumulatorTest.java</url>
-          <line>91</line>
+          <line>88</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="java-line">

@@ -3,11 +3,11 @@ package com.pastillasCreator.pill_box.DATA_FIXTURE;
 import com.pastillasCreator.pill_box.elementosCalendario.Appointment;
 import com.pastillasCreator.pill_box.elementosCalendario.CalendarElement;
 
-import net.bytebuddy.utility.RandomString;
 
 import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
+import java.util.Random;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class CalendarElementDataFixture {
@@ -54,7 +54,14 @@ public class CalendarElementDataFixture {
         return LocalDateTime.of(date, LocalTime.MIDNIGHT);
     }
 
-    private static String getRandomString(int length){
-        return RandomString.make(length);
+    private static String getRandomString(int length) {
+        String validChars = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXTZabcdefghiklmnopqrstuvwxyz";
+        char[] chars = validChars.toCharArray();
+        StringBuilder randomstring = new StringBuilder();
+        for (int i = 0; i < length; i++) {
+            int random_number = new Random().nextInt(chars.length);
+            randomstring.append(chars[random_number]);
+        }
+        return randomstring.toString();
     }
 }

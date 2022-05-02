@@ -1,7 +1,5 @@
 package com.pastillasCreator.pill_box.almacenaje;
 
-import com.pastillasCreator.pill_box.elementosCalendario.Appointment;
-
 import junit.framework.TestCase;
 
 import java.util.ArrayList;

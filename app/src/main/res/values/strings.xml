@@ -1,5 +1,33 @@
 <resources>
     <string name="app_name">MyMedicine</string>
+    <string name="add_pill">Añadir Pastilla</string>
+    <string name="add_appointment">Añadir Cita</string>
+    <string name="gratitude">¡Gracias por instalar esta app! \n\nPara comenzar su experiencia vaya a la sección Pastillero y añada una pastilla o a la sección Citas y añada una. \n\nToda la información que añada se guardará en las listas correspondientes y se creará una alarma automáticamente.\n\n\nNunca volverá a olvidarse de sus pastillas.</string>
+    <string name="eliminar">Eliminar</string>
+    <string name="select_Day">Seleccionar Día</string>
+    <string name="save">Guardar</string>
+    <string name="no_forget">No vuelva a olvidarse</string>
+    <string name="multiple_pills">multiple_pills</string>
+    <string name="unique_blue_pill">unique_blue_pill</string>
+    <string name="big_pill">big_pill</string>
+    <string name="title">MyMedicine</string>
+    <string name="seleccionar_hora">Seleccionar Hora</string>
+    <string name="seleccionar_fecha">Seleccionar fecha</string>
+    <string name="remove">Eliminar</string>
+    <string name="name">Nombre</string>
+    <string name="appointment_creator">Creador Cita</string>
+    <string name="description">Descripción</string>
+    <string name="select_hour">Seleccionar Hora</string>
+    <string name="select_date">Seleccionar fecha</string>
+    <string name="go_back">Volver</string>
+    <string name="total">Total</string>
+    <string name="type">Tipo</string>
+    <string name="hour">Hora</string>
+    <string name="date">Fecha</string>
+    <string name="remove_pill">Borrar pastilla</string>
+    <string name="add_pills">Añadir Pastillas</string>
+    <string name="n_pastillas_que_tienes">Nº Pastillas que tienes</string>
+    <string name="cambiar_hora">Cambiar hora</string>
     <!-- Strings used for fragments for navigation -->
 
 </resources>

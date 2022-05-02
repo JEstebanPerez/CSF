@@ -5,7 +5,7 @@
     android:id="@+id/Ayuda"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pastillasCreator.pill_box.actividades.Ayuda"
+    tools:context="com.pastillasCreator.pill_box.actividades.HelpActivity"
     tools:ignore="DuplicateIds">
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
@@ -27,7 +27,7 @@
         android:layout_height="554dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="32dp"
-        android:text="¡Gracias por instalar esta app! \n\nPara comenzar su experiencia vaya a la sección Pastillero y añada una pastilla o a la sección Citas y añada una. \n\nToda la información que añada se guardará en las listas correspondientes y se creará una alarma automáticamente.\n\n\nNunca volverá a olvidarse de sus pastillas."
+        android:text="@string/gratitude"
         android:textSize="24sp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"

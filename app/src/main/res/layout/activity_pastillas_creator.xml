@@ -5,7 +5,7 @@
     android:id="@+id/horaPastilla"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador">
+    tools:context="com.pastillasCreator.pill_box.actividades.PillCreatorActivity">
 
     <TextView
         android:id="@+id/textView"
@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:fontFamily="monospace"
-        android:text="Añadir Pastillas"
+        android:text="@string/add_pills"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textSize="34sp"
         android:textStyle="bold|italic"
@@ -27,12 +27,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Nº Pastillas que tienes"
+        android:hint="@string/n_pastillas_que_tienes"
         android:inputType="number"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombrePastilla" />
+        app:layout_constraintTop_toBottomOf="@+id/nombrePastilla"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/nombrePastilla"
@@ -40,12 +41,13 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/descripcionPastilla"
@@ -54,19 +56,20 @@
         android:layout_marginTop="16dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Descripción breve"
+        android:hint="@string/description"
         android:inputType="textMultiLine"
         android:minHeight="48dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/totalPastilla" />
+        app:layout_constraintTop_toBottomOf="@+id/totalPastilla"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/botonGuardar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:onClick="guardar"
-        android:text="Guardar"
+        android:onClick="saveNewItem"
+        android:text="@string/save"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -91,16 +94,16 @@
         android:layout_centerInParent="true"
         android:layout_marginTop="16dp"
         android:background="@android:drawable/editbox_background"
-        android:drawableEnd="@android:drawable/arrow_down_float"
         android:drawablePadding="16dp"
-        android:hint="Seleccionar Día"
+        android:hint="@string/select_Day"
         android:padding="12dp"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.512"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/spinnerTipoPastilla"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:drawableEndCompat="@android:drawable/arrow_down_float" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"
@@ -119,8 +122,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        android:onClick="abrirHora"
-        android:text="Seleccionar hora"
+        android:onClick="showHour"
+        android:text="@string/select_hour"
         app:layout_constraintBottom_toTopOf="@+id/botonGuardar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
@@ -134,7 +137,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginTop="17dp"
-        android:text="Hora"
+        android:text="@string/hour"
         android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@+id/botonGuardar"
         app:layout_constraintEnd_toStartOf="@+id/button5"

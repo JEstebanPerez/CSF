@@ -10,39 +10,38 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Pill_Box">
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.EditarCitas"
+            android:name="com.pastillasCreator.pill_box.actividades.AppointmentEditorActivity"
             android:exported="false" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.EditarPastilla"
+            android:name="com.pastillasCreator.pill_box.actividades.PillEditorActivity"
             android:exported="false" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.Ayuda"
+            android:name="com.pastillasCreator.pill_box.actividades.HelpActivity"
             android:exported="false" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.ActividadPastillero"
+            android:name="com.pastillasCreator.pill_box.actividades.PillAccumulatorActivity"
             android:exported="true" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.MostradorPastillas"
+            android:name="com.pastillasCreator.pill_box.actividades.PillShower"
             android:exported="true" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.Informacion"
+            android:name="com.pastillasCreator.pill_box.actividades.InfoActivity"
             android:exported="true" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.ActividadCitero"
+            android:name="com.pastillasCreator.pill_box.actividades.AppointmentAccumulatorActivity"
             android:exported="false" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.ActividadCalendario"
+            android:name="com.pastillasCreator.pill_box.actividades.CalendarActivity"
             android:exported="false" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas"
+            android:name="com.pastillasCreator.pill_box.actividades.AppointmentCreatorActivity"
             android:exported="true" />
         <activity
-            android:name="com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador"
+            android:name="com.pastillasCreator.pill_box.actividades.PillCreatorActivity"
             android:exported="true" />
         <activity
-            android:name="com.pastillasCreator.pill_box.actividades.ActividadMain"
+            android:name="com.pastillasCreator.pill_box.actividades.MainActivity"
             android:exported="true"
-            android:label="@string/app_name"
             android:theme="@style/Theme.Pill_Box.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -50,6 +49,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name="com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick" />
     </application>
 
 </manifest>

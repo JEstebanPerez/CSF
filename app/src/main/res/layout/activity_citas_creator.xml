@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas">
+    tools:context="com.pastillasCreator.pill_box.actividades.AppointmentCreatorActivity">
 
     <TextView
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Creador Cita"
+        android:text="@string/appointment_creator"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -22,12 +22,13 @@
         android:layout_height="51dp"
         android:layout_marginTop="40dp"
         android:ems="10"
-        android:hint="Nombre"
+        android:hint="@string/name"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.416"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintTop_toBottomOf="@+id/textView2"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/descripcionCita"
@@ -36,12 +37,13 @@
         android:layout_marginTop="28dp"
         android:ems="10"
         android:gravity="start|top"
-        android:hint="Descripción"
+        android:hint="@string/description"
         android:inputType="textMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.426"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nombreCita" />
+        app:layout_constraintTop_toBottomOf="@+id/nombreCita"
+        android:autofillHints="" />
 
     <Button
         android:id="@+id/button2"
@@ -49,8 +51,8 @@
         android:layout_height="73dp"
         android:layout_marginTop="32dp"
         android:layout_marginBottom="116dp"
-        android:onClick="guardar"
-        android:text="Guardar"
+        android:onClick="saveNewItem"
+        android:text="@string/save"
         app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
@@ -63,8 +65,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:onClick="abrirHora"
-        android:text="Seleccionar Hora"
+        android:onClick="showHour"
+        android:text="@string/select_hour"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/descripcionCita" />
 
@@ -73,8 +75,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:onClick="abrirCalendario"
-        android:text="Seleccionar fecha"
+        android:onClick="showDate"
+        android:text="@string/select_date"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.874"
         app:layout_constraintStart_toStartOf="parent"

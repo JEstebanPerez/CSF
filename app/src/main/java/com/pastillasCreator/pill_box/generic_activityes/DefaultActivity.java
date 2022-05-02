@@ -29,4 +29,15 @@ public abstract class DefaultActivity extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(x -> FunctionsWhenClick.getApply(x, getApplicationContext(), this));
     }
 
+    public Integer getSelectedItem() {
+        return selectedItem;
+    }
+
+    public Integer getSelectedContentView() {
+        return selectedContentView;
+    }
+
+    public Context getContext() {
+        return context;
+    }
 }

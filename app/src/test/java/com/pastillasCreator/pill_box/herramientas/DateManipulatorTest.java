@@ -1,53 +1,34 @@
 package com.pastillasCreator.pill_box.herramientas;
 
-import android.os.Build;
-
-import androidx.annotation.RequiresApi;
-
-import org.junit.Assert;
-import org.junit.Test;
-import org.junit.runner.RunWith;
+import junit.framework.TestCase;
 
 import java.time.LocalDateTime;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
-public class DateManipulatorTest {
+public class DateManipulatorTest extends TestCase {
 
 
-    @RequiresApi(api = Build.VERSION_CODES.N)
-    @Test
-    public void testInTimeToStringValue() {
-        List<String> validStrings = IntStream.rangeClosed(0,9)
-                .mapToObj(x -> "0"+x).collect(Collectors.toList());
-        List<String> validStringsHigherThan10 = IntStream.rangeClosed(10,99)
-                .mapToObj(x -> ""+x).collect(Collectors.toList());
-
-        validStrings.addAll(validStringsHigherThan10);
-
-        IntStream.rangeClosed(0,99).forEach(x ->{
-            String transform = DateManipulator.inTimeToStringValue(x);
-            String valid = validStrings.get(x);
-            Assert.assertEquals(transform,valid);
-        });
-    }
-
-    @RequiresApi(api = Build.VERSION_CODES.O)
-    @Test
     public void testDateFromStringToLocalDateTime() {
-        LocalDateTime now = LocalDateTime.now();
-        String day = now.getYear()+"-"+now.getMonthValue()+"-"+now.getDayOfMonth();
-        String hour = now.getHour()+":"+now.getMinute();
-        LocalDateTime otherNow = DateManipulator.dateFromStringToLocalDateTime(day,hour);
-
-        Assert.assertEquals(now.getYear(), otherNow.getYear());
-        Assert.assertEquals(now.getMonthValue(), otherNow.getMonthValue());
-        Assert.assertEquals(now.getDayOfMonth(), otherNow.getDayOfMonth());
-        Assert.assertEquals(now.getHour(), otherNow.getHour());
-        Assert.assertEquals(now.getMinute(), otherNow.getMinute());
-
+        String days = "07/02/2022";
+        String hours = "23:45";
+        LocalDateTime date = DateManipulator.dateFromStringToLocalDateTime(days,hours);
+        assertEquals(7,date.getDayOfMonth());
+        assertEquals(2,date.getMonthValue());
+        assertEquals(2022,date.getYear());
+        assertEquals(23,date.getHour());
+        assertEquals(45,date.getMinute());
+        assertEquals(0,date.getSecond());
     }
 
-
+    public void testInTimeToStringValue() {
+        List<String> values = IntStream.rangeClosed(0,99).mapToObj(DateManipulator::inTimeToStringValue)
+                .collect(Collectors.toList());
+        long distint_int_values = values.stream().map(Integer::parseInt).distinct().count();
+        long count = values.stream().filter(x -> x.length()==2).count();
+        assertEquals(100, count);
+        assertEquals(100,distint_int_values);
+    }
 }

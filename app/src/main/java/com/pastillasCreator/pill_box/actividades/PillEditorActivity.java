@@ -1,11 +1,8 @@
 package com.pastillasCreator.pill_box.actividades;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 

@@ -1,23 +1,17 @@
 package com.pastillasCreator.pill_box.generic_activityes;
 
 import android.app.TimePickerDialog;
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.TimePicker;
-import android.widget.Toast;
 
 import androidx.annotation.RequiresApi;
 
-import com.pastillasCreator.pill_box.actividades.AppointmentAccumulatorActivity;
-import com.pastillasCreator.pill_box.creadorElementosCalendario.AppointmentCreator;
 import com.pastillasCreator.pill_box.elementosCalendario.CalendarElement;
-import com.pastillasCreator.pill_box.herramientas.DateManipulator;
 
-import java.time.LocalDateTime;
 import java.util.Calendar;
 
 public abstract class BuilderActivity<T extends CalendarElement> extends DefaultActivity{

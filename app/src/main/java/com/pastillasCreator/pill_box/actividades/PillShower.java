@@ -12,7 +12,6 @@ import androidx.annotation.RequiresApi;
 
 import com.example.pill_box.R;
 import com.pastillasCreator.pill_box.almacenaje.PillAccumulator;
-import com.pastillasCreator.pill_box.elementosCalendario.CalendarElement;
 import com.pastillasCreator.pill_box.elementosCalendario.Pill;
 import com.pastillasCreator.pill_box.generic_activityes.DefaultActivity;
 

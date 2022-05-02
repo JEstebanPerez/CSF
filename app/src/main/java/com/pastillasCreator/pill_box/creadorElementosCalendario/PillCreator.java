@@ -40,20 +40,13 @@ public class PillCreator extends CalendarElementCreator<Pill> {
 
     @RequiresApi(api = Build.VERSION_CODES.O)
     protected void checkFields() {
-        if (name.isEmpty()) {
-            throw new CreatorException(CreatorException.EMPTY_VALUE, "name");
-        }
-
+        super.checkFields();
         if (!isValidPillNumber()) {
             throw new CreatorException(CreatorException.NOT_VALID_VALUE, pillMessage());
         }
 
         if (hour.isEmpty()) {
             throw new CreatorException(CreatorException.EMPTY_VALUE, "hour");
-        }
-
-        if (description.isEmpty()) {
-            throw new CreatorException(CreatorException.EMPTY_VALUE, "description");
         }
 
         if(!anySelectedDay()){

@@ -50,5 +50,21 @@ public abstract class AccumulatorActivity extends DefaultActivity{
         startActivity(new Intent(getApplicationContext(), creatorClass));
     }
 
+    public Accumulator<?> getAccumulator() {
+        return accumulator;
+    }
+
+    public Integer getListId() {
+        return listId;
+    }
+
+    public Class<?> getCreatorClass() {
+        return creatorClass;
+    }
+
+    public Class<?> getEditorClass() {
+        return editorClass;
+    }
+
 
 }

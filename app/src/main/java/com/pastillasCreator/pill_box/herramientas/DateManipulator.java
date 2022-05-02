@@ -2,7 +2,6 @@ package com.pastillasCreator.pill_box.herramientas;
 
 import android.os.Build;
 
-
 import androidx.annotation.RequiresApi;
 
 import com.pastillasCreator.pill_box.elementosCalendario.CalendarElement;

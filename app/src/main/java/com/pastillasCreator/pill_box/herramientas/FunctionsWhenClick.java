@@ -9,11 +9,11 @@ import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pill_box.R;
-import com.pastillasCreator.pill_box.actividades.CalendarActivity;
 import com.pastillasCreator.pill_box.actividades.AppointmentAccumulatorActivity;
+import com.pastillasCreator.pill_box.actividades.CalendarActivity;
+import com.pastillasCreator.pill_box.actividades.HelpActivity;
 import com.pastillasCreator.pill_box.actividades.MainActivity;
 import com.pastillasCreator.pill_box.actividades.PillAccumulatorActivity;
-import com.pastillasCreator.pill_box.actividades.HelpActivity;
 
 import java.util.HashMap;
 import java.util.Map;

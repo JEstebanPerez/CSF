@@ -1,21 +1,13 @@
 package com.pastillasCreator.pill_box.actividades;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
-import android.view.View;
-import android.widget.ArrayAdapter;
-import android.widget.ListAdapter;
-import android.widget.ListView;
 
 import androidx.annotation.RequiresApi;
 
 import com.example.pill_box.R;
 import com.pastillasCreator.pill_box.almacenaje.AppointmentAccumulator;
 import com.pastillasCreator.pill_box.generic_activityes.AccumulatorActivity;
-import com.pastillasCreator.pill_box.generic_activityes.DefaultActivity;
-
-import java.util.List;
 
 public class AppointmentAccumulatorActivity extends AccumulatorActivity {
 
@@ -30,7 +22,6 @@ public class AppointmentAccumulatorActivity extends AccumulatorActivity {
         listId = R.id.listCita;
         editorClass = AppointmentEditorActivity.class;
         creatorClass = AppointmentCreatorActivity.class;
-
         super.onCreate(savedInstanceState);
     }
 

@@ -44,4 +44,8 @@ public abstract class Accumulator<T extends CalendarElement> {
         elements.remove(element);
     }
 
+    public void clear(){
+        elements.clear();
+    }
+
 }

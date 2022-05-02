@@ -53,14 +53,14 @@ public abstract class CalendarElement implements Serializable {
         this.description = description;
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     public boolean equals(Object object) {
-        try {
-            return ObjectComparator.compareObjects(this, object, Appointment.class);
-        } catch (IllegalAccessException e) {
-            e.printStackTrace();
-            return false;
-        }
+        return ObjectComparator.compareObjects(this, object, Appointment.class);
+    }
+
+    public LocalDateTime getDate(){
+        return date;
     }
 
     @RequiresApi(api = Build.VERSION_CODES.O)

@@ -67,7 +67,7 @@
     <string name="mtrl_picker_invalid_format_use">Utiliser %1$s</string>
     <string name="mtrl_picker_invalid_range">Plage non valide.</string>
     <string name="mtrl_picker_navigate_to_year_description">Accéder à l\'année %1$s</string>
-    <string name="mtrl_picker_out_of_range">Hors de portée : %1$s</string>
+    <string name="mtrl_picker_out_of_range">Hors limite : %1$s</string>
     <string name="mtrl_picker_range_header_only_end_selected">Date de début – %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s – Date de fin</string>
     <string name="mtrl_picker_range_header_selected">%1$s - %2$s</string>

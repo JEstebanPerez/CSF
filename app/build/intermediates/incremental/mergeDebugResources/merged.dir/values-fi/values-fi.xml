@@ -67,7 +67,7 @@
     <string name="mtrl_picker_invalid_format_use">Käytä muotoa %1$s</string>
     <string name="mtrl_picker_invalid_range">Virheellinen alue</string>
     <string name="mtrl_picker_navigate_to_year_description">Siirry vuoteen %1$s</string>
-    <string name="mtrl_picker_out_of_range">Katvealueella: %1$s</string>
+    <string name="mtrl_picker_out_of_range">Aikavälin ulkop.: %1$s</string>
     <string name="mtrl_picker_range_header_only_end_selected">Alkamispäivä – %1$s</string>
     <string name="mtrl_picker_range_header_only_start_selected">%1$s – päättymispäivä</string>
     <string name="mtrl_picker_range_header_selected">%1$s – %2$s</string>

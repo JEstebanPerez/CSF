@@ -17,11 +17,11 @@
     <string name="material_hour_suffix">%1$s en punto</string>
     <string name="material_minute_selection">Seleccionar minutos</string>
     <string name="material_minute_suffix">%1$s minutos</string>
-    <string name="material_timepicker_am">A. M.</string>
+    <string name="material_timepicker_am">a.m.</string>
     <string name="material_timepicker_clock_mode_description">Cambia al modo de reloj para ingresar la hora.</string>
     <string name="material_timepicker_hour">Hora</string>
     <string name="material_timepicker_minute">Minuto</string>
-    <string name="material_timepicker_pm">P. M.</string>
+    <string name="material_timepicker_pm">p.m.</string>
     <string name="material_timepicker_select_time">Seleccionar la hora</string>
     <string name="material_timepicker_text_input_mode_description">Cambia al modo de entrada de texto para ingresar la hora.</string>
     <string name="mtrl_badge_numberless_content_description">Notificación nueva</string>

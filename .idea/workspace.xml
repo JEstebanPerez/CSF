@@ -12,18 +12,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="Little changes to imports and optimized test imports">
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" afterDir="false" />
+    <list default="true" id="ee7e2bfc-ca7a-40b8-9737-c487eaccd7b9" name="Default Changelist" comment="merge test branch into main">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" beforeDir="false" afterPath="$PROJECT_DIR$/app/build/intermediates/processed_res/debug/out/resources-debug.ap_" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/DATA_FIXTURE/CalendarElementDataFixture.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/DATA_FIXTURE/CalendarElementDataFixture.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AccumulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/almacenaje/AppointmentAccumulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/DateManipulatorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/pastillasCreator/pill_box/herramientas/DateManipulatorTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -310,7 +300,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="07dd7592-12c2-4f74-972f-04b7b5811d2f" name="Default Changelist" comment="" />
+      <changelist id="ee7e2bfc-ca7a-40b8-9737-c487eaccd7b9" name="Default Changelist" comment="merge test branch into main" />
       <created>1649846335757</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -351,7 +341,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651494012327</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="merge test branch into main">
+      <created>1651496065901</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651496065901</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -385,7 +382,8 @@
     <MESSAGE value="Working software with SOLID principles applied" />
     <MESSAGE value="Added Tests" />
     <MESSAGE value="Little changes to imports and optimized test imports" />
-    <option name="LAST_COMMIT_MESSAGE" value="Little changes to imports and optimized test imports" />
+    <MESSAGE value="merge test branch into main" />
+    <option name="LAST_COMMIT_MESSAGE" value="merge test branch into main" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

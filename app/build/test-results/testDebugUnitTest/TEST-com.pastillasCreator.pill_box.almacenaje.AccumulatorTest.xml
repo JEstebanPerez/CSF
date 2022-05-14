@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" tests="7" skipped="0" failures="0" errors="0" timestamp="2022-05-02T12:28:12" hostname="DESKTOP-SANTO" time="0.015">
+  <properties/>
+  <testcase name="testRemoveElementByElement" classname="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" time="0.005"/>
+  <testcase name="testGetAllElements" classname="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" time="0.002"/>
+  <testcase name="testContainsElement" classname="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" time="0.005"/>
+  <testcase name="testSaveElement" classname="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" time="0.0"/>
+  <testcase name="testGetElement" classname="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" time="0.002"/>
+  <testcase name="testRemoveElementByPosition" classname="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" time="0.0"/>
+  <testcase name="testGetNameListOfElements" classname="com.pastillasCreator.pill_box.almacenaje.AccumulatorTest" time="0.001"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

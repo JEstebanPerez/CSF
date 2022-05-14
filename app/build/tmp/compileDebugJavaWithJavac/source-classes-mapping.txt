@@ -1,0 +1,90 @@
+com/pastillasCreator/pill_box/actividades/Actividad.java
+ com.pastillasCreator.pill_box.actividades.Actividad
+com/example/pill_box/databinding/ActivityCalendarioBinding.java
+ com.example.pill_box.databinding.ActivityCalendarioBinding
+com/example/pill_box/BuildConfig.java
+ com.example.pill_box.BuildConfig
+com/pastillasCreator/pill_box/actividades/ActividadPastillero.java
+ com.pastillasCreator.pill_box.actividades.ActividadPastillero
+ com.pastillasCreator.pill_box.actividades.ActividadPastillero$1
+ com.pastillasCreator.pill_box.actividades.ActividadPastillero$2
+com/pastillasCreator/pill_box/almacenaje/Citero.java
+ com.pastillasCreator.pill_box.almacenaje.Citero
+com/example/pill_box/databinding/ActivityMainBinding.java
+ com.example.pill_box.databinding.ActivityMainBinding
+com/pastillasCreator/pill_box/elementosCalendario/Pastilla.java
+ com.pastillasCreator.pill_box.elementosCalendario.Pastilla
+com/example/pill_box/databinding/ActivityEditarCitasBinding.java
+ com.example.pill_box.databinding.ActivityEditarCitasBinding
+com/pastillasCreator/pill_box/actividades/ActividadCitero.java
+ com.pastillasCreator.pill_box.actividades.ActividadCitero
+ com.pastillasCreator.pill_box.actividades.ActividadCitero$1
+ com.pastillasCreator.pill_box.actividades.ActividadCitero$2
+com/example/pill_box/databinding/ActivityPastilleroBinding.java
+ com.example.pill_box.databinding.ActivityPastilleroBinding
+com/example/pill_box/databinding/ActivityEditarPastillaBinding.java
+ com.example.pill_box.databinding.ActivityEditarPastillaBinding
+com/pastillasCreator/pill_box/actividades/MostradorPastillas.java
+ com.pastillasCreator.pill_box.actividades.MostradorPastillas
+com/example/pill_box/databinding/ActivityInformacionBinding.java
+ com.example.pill_box.databinding.ActivityInformacionBinding
+com/pastillasCreator/pill_box/actividades/ActividadMain.java
+ com.pastillasCreator.pill_box.actividades.ActividadMain
+com/pastillasCreator/pill_box/elementosCalendario/ElementoCalendario.java
+ com.pastillasCreator.pill_box.elementosCalendario.ElementoCalendario
+com/pastillasCreator/pill_box/creadorElementosCalendario/CreadorCitas.java
+ com.pastillasCreator.pill_box.creadorElementosCalendario.CreadorCitas
+com/pastillasCreator/pill_box/actividades/Informacion.java
+ com.pastillasCreator.pill_box.actividades.Informacion
+com/pastillasCreator/pill_box/actividades/ActividadCreadorCitas.java
+ com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas
+ com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas$1
+ com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas$2
+ com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas$3
+com/pastillasCreator/pill_box/elementosCalendario/Cita.java
+ com.pastillasCreator.pill_box.elementosCalendario.Cita
+com/pastillasCreator/pill_box/elementosCalendario/TipoPastilla.java
+ com.pastillasCreator.pill_box.elementosCalendario.TipoPastilla
+com/example/pill_box/databinding/ActivityCitasCreatorBinding.java
+ com.example.pill_box.databinding.ActivityCitasCreatorBinding
+com/example/pill_box/databinding/ActivityPastillasCreatorBinding.java
+ com.example.pill_box.databinding.ActivityPastillasCreatorBinding
+com/example/pill_box/databinding/ActivityCiteroBinding.java
+ com.example.pill_box.databinding.ActivityCiteroBinding
+com/example/pill_box/databinding/ActivityMostradorPastillasBinding.java
+ com.example.pill_box.databinding.ActivityMostradorPastillasBinding
+com/pastillasCreator/pill_box/almacenaje/Pastillero.java
+ com.pastillasCreator.pill_box.almacenaje.Pastillero
+com/pastillasCreator/pill_box/creadorElementosCalendario/PastillasCreador.java
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$1
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$2
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$2$1
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$2$2
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$2$3
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$2$4
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$3
+ com.pastillasCreator.pill_box.creadorElementosCalendario.PastillasCreador$4
+com/pastillasCreator/pill_box/actividades/EditarPastilla.java
+ com.pastillasCreator.pill_box.actividades.EditarPastilla
+ com.pastillasCreator.pill_box.actividades.EditarPastilla$1
+ com.pastillasCreator.pill_box.actividades.EditarPastilla$1$1
+ com.pastillasCreator.pill_box.actividades.EditarPastilla$2
+com/pastillasCreator/pill_box/actividades/ActividadCalendario.java
+ com.pastillasCreator.pill_box.actividades.ActividadCalendario
+ com.pastillasCreator.pill_box.actividades.ActividadCalendario$1
+com/pastillasCreator/pill_box/herramientas/FunctionsWhenClick.java
+ com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick
+com/example/pill_box/databinding/ActivityAyudaBinding.java
+ com.example.pill_box.databinding.ActivityAyudaBinding
+com/pastillasCreator/pill_box/actividades/EditarCitas.java
+ com.pastillasCreator.pill_box.actividades.EditarCitas
+ com.pastillasCreator.pill_box.actividades.EditarCitas$1
+ com.pastillasCreator.pill_box.actividades.EditarCitas$2
+ com.pastillasCreator.pill_box.actividades.EditarCitas$3
+com/pastillasCreator/pill_box/creadorElementosCalendario/CreadorElementosCalendario.java
+ com.pastillasCreator.pill_box.creadorElementosCalendario.CreadorElementosCalendario
+com/pastillasCreator/pill_box/herramientas/ManipuladorFechas.java
+ com.pastillasCreator.pill_box.herramientas.ManipuladorFechas
+com/pastillasCreator/pill_box/actividades/Ayuda.java
+ com.pastillasCreator.pill_box.actividades.Ayuda

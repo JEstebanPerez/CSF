@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pastillasCreator.pill_box.elementosCalendario.PillTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2022-05-02T12:28:12" hostname="DESKTOP-SANTO" time="0.001">
+  <properties/>
+  <testcase name="testGetTotal" classname="com.pastillasCreator.pill_box.elementosCalendario.PillTest" time="0.0"/>
+  <testcase name="testGetType" classname="com.pastillasCreator.pill_box.elementosCalendario.PillTest" time="0.0"/>
+  <testcase name="testGetDayOfWeekList" classname="com.pastillasCreator.pill_box.elementosCalendario.PillTest" time="0.0"/>
+  <testcase name="testChange" classname="com.pastillasCreator.pill_box.elementosCalendario.PillTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

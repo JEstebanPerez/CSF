@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.pastillasCreator.pill_box.creadorElementosCalendario.CalendarElementCreatorTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2022-05-02T12:28:12" hostname="DESKTOP-SANTO" time="0.002">
+  <properties/>
+  <testcase name="testEditElement" classname="com.pastillasCreator.pill_box.creadorElementosCalendario.CalendarElementCreatorTest" time="0.0"/>
+  <testcase name="testCheckFields" classname="com.pastillasCreator.pill_box.creadorElementosCalendario.CalendarElementCreatorTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

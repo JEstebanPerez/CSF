@@ -143,5 +143,29 @@
         app:layout_constraintTop_toBottomOf="@+id/listaSemana"
         app:layout_constraintVertical_bias="0.079" />
 
+    <Button
+        android:id="@+id/buttonCaducidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:onClick="calendarioCaducidad"
+        android:text="Seleccionar fecha"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.874"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
+    <TextView
+        android:id="@+id/fechaCaducidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:textSize="24sp"
+        android:text="Caducidad"
+        app:layout_constraintEnd_toStartOf="@+id/buttonCaducidad"
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

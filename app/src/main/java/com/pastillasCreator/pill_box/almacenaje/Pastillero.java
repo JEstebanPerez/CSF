@@ -48,10 +48,7 @@ public class Pastillero {
         LinkedList<String> listaNombrePastillas = new LinkedList<>() ;
 
         for (Pastilla pastilla: listaPastillas) {
-            if (pastilla.getCaducidad()==null){
-                listaNombrePastillas.add(pastilla.getNombre());
-            }else{
-            listaNombrePastillas.add(pastilla.getNombre()+ "   Caducidad: " + pastilla.getCaducidad());}
+            listaNombrePastillas.add(pastilla.getNombre());
         }
 
         return listaNombrePastillas;

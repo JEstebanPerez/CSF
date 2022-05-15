@@ -8,13 +8,11 @@ public class Pastilla extends ElementoCalendario {
     private TipoPastilla tipo;
     private boolean[] dayOfWeekList;
     private String hora;
-    private  String caducidad;
 
-    public Pastilla(String nombre, String description, int total, TipoPastilla tipo,String caducidad) {
+    public Pastilla(String nombre, String description, int total, TipoPastilla tipo) {
         super(nombre, description);
         this.total = total;
         this.tipo = tipo;
-        this.caducidad=caducidad;
     }
 
     public void setDayOfWeekList(boolean[] dayOfWeekList) {
@@ -31,8 +29,6 @@ public class Pastilla extends ElementoCalendario {
 
     public void setHora(String hora) { this.hora = hora; }
 
-    public void setCaducidad(String caducidad) { this.caducidad = caducidad; }
-
     public int getTotal() {
         return total;
     }
@@ -46,8 +42,6 @@ public class Pastilla extends ElementoCalendario {
     }
 
     public String getHora() { return hora; }
-
-    public String getCaducidad() { return caducidad; }
 
     @Override
     public boolean equals(Object o) {

@@ -4,7 +4,6 @@ package com.pastillasCreator.pill_box.creadorElementosCalendario;
 import static com.pastillasCreator.pill_box.almacenaje.Pastillero.getPastillero;
 
 import android.app.AlertDialog;
-import android.app.DatePickerDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -14,8 +13,6 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Spinner;
 import android.widget.TextView;
@@ -29,7 +26,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.pill_box.R;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.pastillasCreator.pill_box.actividades.ActividadCreadorCitas;
 import com.pastillasCreator.pill_box.actividades.ActividadMain;
 import com.pastillasCreator.pill_box.actividades.ActividadCalendario;
 import com.pastillasCreator.pill_box.actividades.ActividadCitero;
@@ -39,7 +35,6 @@ import com.pastillasCreator.pill_box.almacenaje.Pastillero;
 import com.pastillasCreator.pill_box.elementosCalendario.ElementoCalendario;
 import com.pastillasCreator.pill_box.elementosCalendario.Pastilla;
 import com.pastillasCreator.pill_box.elementosCalendario.TipoPastilla;
-import com.pastillasCreator.pill_box.herramientas.ManipuladorFechas;
 
 import java.sql.Time;
 import java.util.ArrayList;
@@ -54,8 +49,7 @@ public class PastillasCreador extends AppCompatActivity implements CreadorElemen
     private EditText descripcionActividad;
     private Spinner spinner;
     private TextView textoHora;
-    private TextView textoCaducidad;
-    private Button caducidadPastilla;
+
     // Atributos para el multiseleccionar día de la semana
     private TextView listaSemana;
     private boolean[] diaSeleccionados;
@@ -70,9 +64,6 @@ public class PastillasCreador extends AppCompatActivity implements CreadorElemen
     private boolean[] dayOfWeekList;
     private Time[][] hourDayOfWeekList;
     private String hora;
-    private String fechaCaducidad;
-
-    ManipuladorFechas manipuladorFechas = new ManipuladorFechas();
 
     // Se conecta los campos de texto con el código y el desplegable asigna qué valor tendrá al final el tipo de pastilla
     @Override
@@ -89,10 +80,10 @@ public class PastillasCreador extends AppCompatActivity implements CreadorElemen
         // Datos opcionales
         listaSemana= findViewById(R.id.listaSemana);
         textoHora = findViewById(R.id.horaPastillaView);
-        textoCaducidad = findViewById(R.id.fechaCaducidad);
+
         BottomNavigationView bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setSelectedItemId(R.id.pastillero);
-        caducidadPastilla = findViewById(R.id.buttonCaducidad);
+
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
@@ -324,30 +315,8 @@ public class PastillasCreador extends AppCompatActivity implements CreadorElemen
 
     @Override
     public ElementoCalendario creadorElemento() {
-        Pastilla pastilla = new Pastilla(getNombre(), getDescripcion(), getTotal(), getTipo(),getCaducidad());
+        Pastilla pastilla = new Pastilla(getNombre(), getDescripcion(), getTotal(), getTipo());
         return pastilla;
-    }
-
-    public void calendarioCaducidad(View view) {
-
-        Calendar cal = Calendar.getInstance();
-        int anioCaducidad = cal.get(Calendar.YEAR);
-        int mesCaducidad = cal.get(Calendar.MONTH);
-        int diaCaducidad = cal.get(Calendar.DAY_OF_MONTH);
-
-        DatePickerDialog dpd = new DatePickerDialog(PastillasCreador.this,
-                new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int year, int month, int dayOfMonth) {
-                        String day = manipuladorFechas.IntegerAStringFecha(dayOfMonth);
-                        String mon = manipuladorFechas.IntegerAStringFecha(month);
-                        String fecha = day + "/" + mon + "/" + year;
-                        textoCaducidad.setText(fecha);
-                        setCaducidad(year + "-" + mon + "-" + day);
-                    }
-                }, anioCaducidad, mesCaducidad, diaCaducidad);
-
-        dpd.show();
     }
 
     public void setName(String name) {
@@ -372,9 +341,6 @@ public class PastillasCreador extends AppCompatActivity implements CreadorElemen
 
     public void setHourDayOfWeekList(Time[][] hourDayOfWeekList) {
         this.hourDayOfWeekList = hourDayOfWeekList;
-    }
-    public void setCaducidad(String fecha) {
-        this.fechaCaducidad = fecha;
     }
 
     public String getNombre() {
@@ -404,8 +370,6 @@ public class PastillasCreador extends AppCompatActivity implements CreadorElemen
     public Time[][] getHourDayOfWeekList() {
         return hourDayOfWeekList;
     }
-
-    public String getCaducidad() { return fechaCaducidad; }
 
     public void setHora(String hora) {
         this.hora = hora;

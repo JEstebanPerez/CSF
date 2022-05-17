@@ -1,46 +1,46 @@
 [
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pastillas_creator.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_pastillas_creator.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_calendario.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_calendario.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_editar_citas.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_editar_citas.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pastillas_creator.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_pastillas_creator.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_calendario.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_calendario.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_informacion.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_informacion.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ayuda.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_ayuda.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_editar_pastilla.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_editar_pastilla.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_editar_pastilla.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_editar_pastilla.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_mostrador_pastillas.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_mostrador_pastillas.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pastillero.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_pastillero.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_ayuda.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_ayuda.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_citas_creator.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_citas_creator.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_mostrador_pastillas.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_mostrador_pastillas.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_citero.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_citero.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_informacion.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_informacion.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_editar_citas.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_editar_citas.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_citero.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_citero.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_pastillero.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_pastillero.xml"
     },
     {
-        "merged": "D:\\vsp\\GIT\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_citas_creator.xml",
-        "source": "D:\\vsp\\GIT\\CSF\\app\\src\\main\\res\\layout\\activity_citas_creator.xml"
+        "merged": "D:\\2.URJC\\CS\\CSF\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "D:\\2.URJC\\CS\\CSF\\app\\src\\main\\res\\layout\\activity_main.xml"
     }
 ]

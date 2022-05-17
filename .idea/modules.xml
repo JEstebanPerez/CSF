@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Pill_Box.iml" filepath="$PROJECT_DIR$/.idea/modules/Pill_Box.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.unitTest.iml" />
     </modules>
   </component>
 </project>

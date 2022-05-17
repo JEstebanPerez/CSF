@@ -8,6 +8,7 @@ import com.pastillasCreator.pill_box.actividades.MainActivity;
 
 
 import org.junit.Assert;
+import org.junit.runner.RunWith;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.When;

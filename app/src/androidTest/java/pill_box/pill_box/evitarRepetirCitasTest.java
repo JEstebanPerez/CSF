@@ -11,8 +11,8 @@ import cucumber.api.java.en.When;
 public class evitarRepetirCitasTest {
 
     @Given("^una cita ya creada$")
-    public void una_cita_ya_creada() throws Throwable {
-        throw new PendingException();
+    public void una_cita_ya_creada()  {
+
     }
 
     @When("^se intente crear una cita ya hecha$")

@@ -12,9 +12,11 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ee7e2bfc-ca7a-40b8-9737-c487eaccd7b9" name="Default Changelist" comment="Implementacio Cambio de Tema (claro u oscuro)">
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/features/fechaCaducidad.feature" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/features/noRepetirCitas.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/fechaCaducidadTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/evitarRepetirCitasTest.java" afterDir="false" />
+    <list default="true" id="ee7e2bfc-ca7a-40b8-9737-c487eaccd7b9" name="Default Changelist" comment="HU2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/cambioTemaClaroOscuroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/cambioTemaClaroOscuroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/features/camioTema.feature" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/features/camioTema.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/pastillasCreator/pill_box/actividades/MainActivity.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -375,7 +377,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652804128874</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="HU2">
+      <created>1652805269030</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652805269030</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">
@@ -413,7 +422,8 @@
     <MESSAGE value="merge libraries" />
     <MESSAGE value="Gherkin and Cucumber Test" />
     <MESSAGE value="Implementacio Cambio de Tema (claro u oscuro)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implementacio Cambio de Tema (claro u oscuro)" />
+    <MESSAGE value="HU2" />
+    <option name="LAST_COMMIT_MESSAGE" value="HU2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

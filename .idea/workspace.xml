@@ -13,8 +13,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee7e2bfc-ca7a-40b8-9737-c487eaccd7b9" name="Default Changelist" comment="cambiar tema test">
+      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.androidTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.androidTest.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.main.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.main.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.unitTest.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules/app/Pill_Box.app.unitTest.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/cambioTemaClaroOscuroTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/cambioTemaClaroOscuroTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/evitarRepetirCitasTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/pill_box/pill_box/evitarRepetirCitasTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -390,7 +395,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652807866563</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="cambiar tema test">
+      <created>1652810028658</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1652810028658</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.History.Properties">

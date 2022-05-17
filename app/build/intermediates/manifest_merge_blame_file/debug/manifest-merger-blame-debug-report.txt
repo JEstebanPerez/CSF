@@ -25,125 +25,126 @@
 17-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:9:9-54
 18        android:supportsRtl="true"
 18-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:10:9-35
-19        android:theme="@style/Theme.Pill_Box" >
-19-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:11:9-46
-20        <activity
-20-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:12:9-14:40
-21            android:name="com.pastillasCreator.pill_box.actividades.AppointmentEditorActivity"
-21-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:13:13-95
-22            android:exported="false" />
-22-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:14:13-37
-23        <activity
-23-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:15:9-17:40
-24            android:name="com.pastillasCreator.pill_box.actividades.PillEditorActivity"
-24-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:16:13-88
-25            android:exported="false" />
-25-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:17:13-37
-26        <activity
-26-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:18:9-20:40
-27            android:name="com.pastillasCreator.pill_box.actividades.HelpActivity"
-27-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:19:13-82
-28            android:exported="false" />
-28-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:20:13-37
-29        <activity
-29-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:21:9-23:39
-30            android:name="com.pastillasCreator.pill_box.actividades.PillAccumulatorActivity"
-30-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:22:13-93
-31            android:exported="true" />
-31-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:23:13-36
-32        <activity
-32-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:24:9-26:39
-33            android:name="com.pastillasCreator.pill_box.actividades.PillShower"
-33-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:25:13-80
-34            android:exported="true" />
-34-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:26:13-36
-35        <activity
-35-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:27:9-29:39
-36            android:name="com.pastillasCreator.pill_box.actividades.InfoActivity"
-36-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:28:13-82
-37            android:exported="true" />
-37-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:29:13-36
-38        <activity
-38-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:30:9-32:40
-39            android:name="com.pastillasCreator.pill_box.actividades.AppointmentAccumulatorActivity"
-39-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:31:13-100
-40            android:exported="false" />
-40-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:32:13-37
-41        <activity
-41-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:33:9-35:40
-42            android:name="com.pastillasCreator.pill_box.actividades.CalendarActivity"
-42-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:34:13-86
-43            android:exported="false" />
-43-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:35:13-37
-44        <activity
-44-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:36:9-38:39
-45            android:name="com.pastillasCreator.pill_box.actividades.AppointmentCreatorActivity"
-45-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:37:13-96
-46            android:exported="true" />
-46-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:38:13-36
-47        <activity
-47-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:39:9-41:39
-48            android:name="com.pastillasCreator.pill_box.actividades.PillCreatorActivity"
-48-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:40:13-89
-49            android:exported="true" />
-49-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:41:13-36
-50        <activity
-50-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:42:9-51:20
-51            android:name="com.pastillasCreator.pill_box.actividades.MainActivity"
-51-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:43:13-82
-52            android:exported="true"
-52-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:44:13-36
-53            android:theme="@style/Theme.Pill_Box.NoActionBar" >
-53-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:45:13-62
-54            <intent-filter>
-54-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:46:13-50:29
-55                <action android:name="android.intent.action.MAIN" />
-55-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:47:17-69
-55-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:47:25-66
-56
-57                <category android:name="android.intent.category.LAUNCHER" />
-57-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:49:17-77
-57-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:49:27-74
-58            </intent-filter>
-59        </activity>
-60        <activity android:name="com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick" />
-60-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:52:9-98
-60-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:52:19-95
-61
-62        <provider
-62-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
-63            android:name="androidx.startup.InitializationProvider"
-63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
-64            android:authorities="com.example.pill_box.androidx-startup"
-64-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
-65            android:exported="false" >
-65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
-66            <meta-data
-66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
-67                android:name="androidx.emoji2.text.EmojiCompatInitializer"
-67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
-68                android:value="androidx.startup" />
-68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
-69            <meta-data
-69-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
-70                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
-70-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
-71                android:value="androidx.startup" />
-71-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
-72        </provider>
-73
-74        <uses-library
-74-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
-75            android:name="androidx.window.extensions"
-75-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
-76            android:required="false" />
-76-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
-77        <uses-library
-77-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
-78            android:name="androidx.window.sidecar"
-78-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
-79            android:required="false" />
-79-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
-80    </application>
-81
-82</manifest>
+19        android:testOnly="true"
+20        android:theme="@style/Theme.Pill_Box" >
+20-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:11:9-46
+21        <activity
+21-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:12:9-14:40
+22            android:name="com.pastillasCreator.pill_box.actividades.AppointmentEditorActivity"
+22-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:13:13-95
+23            android:exported="false" />
+23-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:14:13-37
+24        <activity
+24-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:15:9-17:40
+25            android:name="com.pastillasCreator.pill_box.actividades.PillEditorActivity"
+25-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:16:13-88
+26            android:exported="false" />
+26-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:17:13-37
+27        <activity
+27-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:18:9-20:40
+28            android:name="com.pastillasCreator.pill_box.actividades.HelpActivity"
+28-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:19:13-82
+29            android:exported="false" />
+29-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:20:13-37
+30        <activity
+30-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:21:9-23:39
+31            android:name="com.pastillasCreator.pill_box.actividades.PillAccumulatorActivity"
+31-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:22:13-93
+32            android:exported="true" />
+32-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:23:13-36
+33        <activity
+33-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:24:9-26:39
+34            android:name="com.pastillasCreator.pill_box.actividades.PillShower"
+34-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:25:13-80
+35            android:exported="true" />
+35-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:26:13-36
+36        <activity
+36-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:27:9-29:39
+37            android:name="com.pastillasCreator.pill_box.actividades.InfoActivity"
+37-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:28:13-82
+38            android:exported="true" />
+38-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:29:13-36
+39        <activity
+39-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:30:9-32:40
+40            android:name="com.pastillasCreator.pill_box.actividades.AppointmentAccumulatorActivity"
+40-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:31:13-100
+41            android:exported="false" />
+41-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:32:13-37
+42        <activity
+42-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:33:9-35:40
+43            android:name="com.pastillasCreator.pill_box.actividades.CalendarActivity"
+43-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:34:13-86
+44            android:exported="false" />
+44-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:35:13-37
+45        <activity
+45-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:36:9-38:39
+46            android:name="com.pastillasCreator.pill_box.actividades.AppointmentCreatorActivity"
+46-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:37:13-96
+47            android:exported="true" />
+47-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:38:13-36
+48        <activity
+48-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:39:9-41:39
+49            android:name="com.pastillasCreator.pill_box.actividades.PillCreatorActivity"
+49-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:40:13-89
+50            android:exported="true" />
+50-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:41:13-36
+51        <activity
+51-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:42:9-51:20
+52            android:name="com.pastillasCreator.pill_box.actividades.MainActivity"
+52-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:43:13-82
+53            android:exported="true"
+53-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:44:13-36
+54            android:theme="@style/Theme.Pill_Box.NoActionBar" >
+54-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:45:13-62
+55            <intent-filter>
+55-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:46:13-50:29
+56                <action android:name="android.intent.action.MAIN" />
+56-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:47:17-69
+56-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:47:25-66
+57
+58                <category android:name="android.intent.category.LAUNCHER" />
+58-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:49:17-77
+58-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:49:27-74
+59            </intent-filter>
+60        </activity>
+61        <activity android:name="com.pastillasCreator.pill_box.herramientas.FunctionsWhenClick" />
+61-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:52:9-98
+61-->D:\2.URJC\CS\CSF\app\src\main\AndroidManifest.xml:52:19-95
+62
+63        <provider
+63-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+64            android:name="androidx.startup.InitializationProvider"
+64-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+65            android:authorities="com.example.pill_box.androidx-startup"
+65-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+66            android:exported="false" >
+66-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+67            <meta-data
+67-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+68                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+68-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+69                android:value="androidx.startup" />
+69-->[androidx.emoji2:emoji2:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\f1920f1d9631b904725b19a966861cf8\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+70            <meta-data
+70-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+71                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+71-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+72                android:value="androidx.startup" />
+72-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\e2a4092d19f5ec1c3a53b27f970ef211\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+73        </provider>
+74
+75        <uses-library
+75-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:25:9-27:40
+76            android:name="androidx.window.extensions"
+76-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:26:13-54
+77            android:required="false" />
+77-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:27:13-37
+78        <uses-library
+78-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:28:9-30:40
+79            android:name="androidx.window.sidecar"
+79-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:29:13-51
+80            android:required="false" />
+80-->[androidx.window:window:1.0.0] C:\Users\AuroraMFB\.gradle\caches\transforms-3\3c9a7f6f2fcbef61d050204e3a7ded45\transformed\jetified-window-1.0.0\AndroidManifest.xml:30:13-37
+81    </application>
+82
+83</manifest>

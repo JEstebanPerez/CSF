@@ -5,6 +5,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.Switch;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.viewbinding.ViewBinding;
@@ -22,10 +23,14 @@ public final class ActivityMainBinding implements ViewBinding {
   @NonNull
   public final BottomNavigationView bottomNavigation;
 
+  @NonNull
+  public final Switch switch1;
+
   private ActivityMainBinding(@NonNull RelativeLayout rootView,
-      @NonNull BottomNavigationView bottomNavigation) {
+      @NonNull BottomNavigationView bottomNavigation, @NonNull Switch switch1) {
     this.rootView = rootView;
     this.bottomNavigation = bottomNavigation;
+    this.switch1 = switch1;
   }
 
   @Override
@@ -61,7 +66,13 @@ public final class ActivityMainBinding implements ViewBinding {
         break missingId;
       }
 
-      return new ActivityMainBinding((RelativeLayout) rootView, bottomNavigation);
+      id = R.id.switch1;
+      Switch switch1 = ViewBindings.findChildViewById(rootView, id);
+      if (switch1 == null) {
+        break missingId;
+      }
+
+      return new ActivityMainBinding((RelativeLayout) rootView, bottomNavigation, switch1);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
